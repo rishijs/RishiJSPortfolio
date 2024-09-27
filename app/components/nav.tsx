@@ -4,14 +4,17 @@ const navItems = {
   '/': {
     name: 'home',
   },
-  '/explore': {
-    name: 'explore',
+  '/projects': {
+    name: 'projects',
   },
   '/update': {
     name: 'updates',
   },
   'https://rishijs.github.io': {
-    name: 'more',
+    name: 'threeJET',
+  },
+  '/contact': {
+    name: 'contact',
   },
 }
 

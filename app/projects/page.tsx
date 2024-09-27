@@ -2,10 +2,10 @@ export default function Portfolio() {
     return (
       <section>
         <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-          Interactive 3D Portfolio
+          Project List
         </h1>
         <p className="mb-4">
-          {`This is where the interactive portfolio will be`}
+          {`This is where the project list will be`}
         </p>
       </section>
     )
