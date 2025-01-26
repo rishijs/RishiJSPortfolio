@@ -2,7 +2,7 @@ import { UpdatePosts } from 'app/components/posts'
 
 export const metadata = {
   title: 'Updates',
-  description: 'Catch up on my latest work.',
+  description: 'Read through a few of my latest highlights',
 }
 
 export default function Page() {

@@ -1,5 +1,11 @@
 import { UpdatePosts } from 'app/components/posts'
 
+export const metadata = {
+  title: 'RishiJS Home',
+  description: 'About me.',
+}
+
+
 export default function Page() {
   return (
     <section>

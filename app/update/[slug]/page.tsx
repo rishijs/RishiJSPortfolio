@@ -14,7 +14,9 @@ export async function generateStaticParams() {
 export function generateMetadata({ params }) {
   let post = getUpdatePosts().find((post) => post.slug === params.slug)
   if (!post) {
-    return
+    return{
+      
+    }
   }
 
   let {

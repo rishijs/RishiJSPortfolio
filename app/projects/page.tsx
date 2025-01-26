@@ -1,3 +1,9 @@
+export const metadata = {
+  title: 'Projects',
+  description: 'Check out my latest work.',
+}
+
+
 export default function Portfolio() {
     return (
       <section>
