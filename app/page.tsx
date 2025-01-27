@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <section>
+    <section className="mb-12">
       <h2 className="mb-2 text-2xl font-semibold tracking-tighter">
         {`Rishi Jammalamadaka, rishi.rjsd@gmail.com`}
         <img src="/rishi1.jpg" width='100px' height='100px'/>

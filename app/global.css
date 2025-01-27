@@ -138,6 +138,26 @@ input[type='email'] {
   appearance: none;
 }
 
+
+.MuiInputBase-input {
+  color: white !important;
+}
+
+
+.MuiInputBase-input::placeholder {
+  color: #9ca3af !important;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .MuiInputBase-input {
+    color: white !important;
+  }
+  .MuiInputBase-input::placeholder {
+    color: #9ca3af !important;
+  }
+}
+
 table {
   display: block;
   max-width: fit-content;
