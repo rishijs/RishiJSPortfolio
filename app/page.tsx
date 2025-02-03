@@ -1,4 +1,6 @@
 import { UpdatePosts } from 'app/components/posts'
+import Profile from 'app/components/profile'
+import Skills from './components/skills'
 
 export const metadata = {
   title: 'RishiJS Home',
@@ -9,17 +11,7 @@ export const metadata = {
 export default function Page() {
   return (
     <section className="mb-12">
-      <h2 className="mb-2 text-2xl font-semibold tracking-tighter">
-        {`Rishi Jammalamadaka, rishi.rjsd@gmail.com`}
-        <img src="/rishi1.jpg" width='100px' height='100px'/>
-      </h2>
-      <h1 className="mb-4">
-        {`Software Engineer and Game Developer
-        B.S. Computer Science @Rutgers New Brunswick
-        
-        Working on Freelance and Personal Projects
-        Looking for Full Time Roles`}
-      </h1>
+      <Profile/>
       <div className="my-8">
         <UpdatePosts />
       </div>
