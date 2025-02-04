@@ -1,0 +1,25 @@
+import React from "react";
+
+const Timeline = ({ items }) => {
+  return (
+    <div className="relative mx-auto w-full">
+
+      <div className="absolute left-1/2 top-0 h-full w-1 bg-gray-300 transform -translate-x-1/2"></div>
+
+      {items.map((item, index) => (
+        <div key={index} className={`relative flex items-center w-full my-8 ${index % 2 === 0 ? "justify-start" : "justify-end"}`}>
+
+          <div className="absolute left-1/2 w-4 h-4 bg-black rounded-full transform -translate-x-1/2"></div>
+
+
+          <div className={`w-5/12 p-4 bg-black shadow-md border border-solid border-white ${index % 2 === 0 ? "text-right" : "text-left"}`}>
+            <time className="block text-sm font-bold text-white">{item.date}</time>
+            <p className="text-white">{item.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Timeline;

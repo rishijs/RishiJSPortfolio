@@ -1,16 +1,14 @@
 import SkillCard from "./skillCard";
-import {SkillProps} from "../components/skillCard"
+import {SkillProps} from "./skillCard"
 import Typography from "@mui/material/Typography";
 
 
 const skills:Array<SkillProps> = [ 
-    {name: "Skill1"},
-    {name: "Skill2"},
-    {name: "Skill3"},
-    {name: "Skill4"},
-    {name: "Skill5"},
-    {name: "Skill6"},
-    {name: "Skill7"}
+    {name: "AoE1"},
+    {name: "AoE2"},
+    {name: "AoE3"},
+    {name: "AoE4"},
+    {name: "AoE5"},
   ]
 
 export default function Skills(){
@@ -26,6 +24,12 @@ export default function Skills(){
                     <li key={name} className="bg-black text-black border border solid border-white">
                       <SkillCard name={name} className="text-black"/>
                     </li>
+                    /*
+                    Python, Javascript, Java, C/C++/C#, GDScript, HTML/CSS, JDBC,
+                    MySQL Tools/Frameworks: Three.js, React.js, Flask, Git, 
+                    Unreal Engine, Unity, Godot, Jupyter Notebooks,
+                    Pandas, NumPy, Matplotlib, Pygame
+                    */
                   );
                 })}
               </ul>
