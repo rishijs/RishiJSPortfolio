@@ -1,4 +1,5 @@
 import React from "react";
+import SkillCard, { SkillProps } from "./skillCard";
 
 const Timeline = ({ items }) => {
   return (
@@ -11,11 +12,26 @@ const Timeline = ({ items }) => {
 
           <div className="absolute left-1/2 w-4 h-4 bg-black rounded-full transform -translate-x-1/2"></div>
 
-
           <div className={`w-5/12 p-4 bg-black shadow-md border border-solid border-white ${index % 2 === 0 ? "text-right" : "text-left"}`}>
             <time className="block text-sm font-bold text-white">{item.date}</time>
             <p className="text-white">{item.description}</p>
+            <div className="flex flex-col">
+              <ul
+                className={`flex flex-wrap gap-2 mt-4 ${index % 2 === 0 ? "justify-end" : "justify-start"}`}
+              >
+                {item.cards.map((item: SkillProps) => {
+                  const name = item.name;
+                  return (
+                    <li key={name} className="bg-black text-black border border solid border-white">
+                      <SkillCard name={name} className="text-black"/>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
+
+
         </div>
       ))}
     </div>

@@ -1,10 +1,7 @@
 import { UpdatePosts } from 'app/components/posts'
 import Profile from 'app/components/profile'
-import Skills from './components/skills'
 import Events from './components/events'
 import Sequence from './components/sequence'
-import AreasOfExpertise from './components/areasOfExpertise'
-import Courses from './components/courses'
 
 export const metadata = {
   title: 'RishiJS Home',
@@ -19,8 +16,6 @@ export default function Page() {
       <UpdatePosts />
       <Sequence />
       <Events />
-      <Courses />
-      <AreasOfExpertise />
     </section>
   )
 }

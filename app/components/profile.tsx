@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Skills from "./skills";
+import ProfileFooter from "./profileFooter";
 
 export default function Profile() {
   const pdfUrl = "/resume.pdf";
@@ -21,8 +22,9 @@ export default function Profile() {
             </div>
             <img src="/rishi1.jpg" className="ml-48 w-fit h-fit"/>
         </div>
-        <h1 className="mb-4">
-            {`Software Engineer and Game Developer B.S. Computer Science
+        
+        <h1 className="mb-4 text-center">
+            {`Software Engineer and Game Developer B.S. Computer Science Graduate
             `}
             <a 
                 href="https://newbrunswick.rutgers.edu/?utm_source=rutgers.edu&utm_medium=web&utm_campaign=uwide_sliver_new" 
@@ -32,12 +34,13 @@ export default function Profile() {
             >
              @Rutgers New Brunswick
             </a>
-            {`
-            
-            Working on Freelance and Personal Projects
-            Looking for Full Time Roles`}
+            <br/> 
+            {`Working on Freelance Projects and looking for Full Time Roles`} 
         </h1>
         <Skills/>
+
+        <ProfileFooter/>
+        
     </div>
   );
 }

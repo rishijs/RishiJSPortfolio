@@ -1,6 +1,6 @@
 import Image from "next/image";
-import {Props} from "../components/projectCard";
-import ProjectCard from "../components/projectCard";
+import {Props} from "../components/projectDetails";
+import ProjectDetails from "app/components/projectDetails";
 
 export const metadata = {
   title: 'Projects',
@@ -11,59 +11,44 @@ export default function Projects() {
   const projects:Array<Props> = [
     {
       name: "Default1",
-      basic_description: "Basic Project Description1",
-      description: "Advanced Project Description1",
-      testoptional: 0,
+      description: "Project Description1",
     },
     {
       name: "Default2",
-      basic_description: "Basic Project Description2",
-      description: "Advanced Project Description2",
-      testoptional: 0,
+      description: "Project Description2",
     },
     {
       name: "Default3",
-      basic_description: "Basic Project Description3",
-      description: "Advanced Project Description3",
-      testoptional: 0,
+      description: "Project Description3",
     },
     {
       name: "Default4",
-      basic_description: "Basic Project Description4",
-      description: "Advanced Project Description4",
-      testoptional: 0,
+      description: "Project Description4",
     },
     {
       name: "Default5",
-      basic_description: "Basic Project Description5",
-      description: "Advanced Project Description5",
-      testoptional: 0,
+      description: "Project Description5",
     },
     {
       name: "Default6",
-      basic_description: "Basic Project Description6",
-      description: "Advanced Project Description6",
-      testoptional: 0,
+      description: "Project Description6",
     },
     {
       name: "Default7",
-      basic_description: "Basic Project Description7",
-      description: "Advanced Project Description7",
-      testoptional: 0,
+      description: "Project Description7",
     },
   ];
   return (
     <div className="mb-12 gap-2">
 
       <main className="grid grid-cols-1">
-        <div className="bg-white-400 overflow-y-auto px-4 py-4">
-          <ul className="grid grid-cols-1 gap-2 border border-white">
+        <div>
+          <ul className="grid grid-cols-1 gap-2">
             {projects.map(function(item:Props) {
-              const {name, basic_description, description, ...remaining} = item
-              return <ProjectCard 
+              const {name, description, ...remaining} = item
+              return <ProjectDetails
                 key={item.name}
                 name={name}
-                basic_description={basic_description}
                 description={description}
               />
             })}
