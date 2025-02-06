@@ -13,18 +13,21 @@ const defaultLink:LinkProps = {
     name: "Link",
     description: "Card Description",
     link: "#",
+    image: "favicon.ico",
 };
 
 export default function DataCard(props?: LinkProps) {
     props = props ?? defaultLink;
+
     return(
         <Button
-            className="hover:text-black w-full py-4 border-2 border-solid border-white"
+            className="border-2 border-solid !border-white hover:!border-red-500 hover:!border-4"
             href={props.link!}
             >
             <div className="grid grid-cols-1">
                 <Typography className="text-white text-center break-words text-xs md:text-sm lg:text-base">{props.name}</Typography>
-                <Typography className="text-white hidden sm:flex text-xs md:text-sm lg:text-base  text-center break-words">{props.description}</Typography>
+                <Typography className="text-white hidden sm:flex text-xs md:text-sm lg:text-base text-center break-words">{props.description}</Typography>
+                <img src={props.image} className="w-fit h-fit"/>
             </div>
         </Button>
     );

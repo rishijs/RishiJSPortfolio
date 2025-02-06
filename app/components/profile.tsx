@@ -15,7 +15,7 @@ export default function Profile() {
                 </h2>
                 <Link href="/resume.pdf" target="_blank">
                     <button
-                    className="border border-solid border-white bg-foreground w-48">
+                    className="border border-solid border-white bg-foreground w-48 hover:!bg-red-500">
                     View Resume
                     </button>
                 </Link>
