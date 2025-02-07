@@ -14,8 +14,8 @@ export default function Page() {
     <section className="grid grid-cols-1 gap-10 mb-12">
       <Profile/>
       <UpdatePosts />
-      <Sequence />
       <Events />
+      <Sequence />
     </section>
   )
 }

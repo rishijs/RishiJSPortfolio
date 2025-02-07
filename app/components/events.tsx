@@ -4,12 +4,8 @@ import Typography from "@mui/material/Typography";
 
 
 const events:Array<LinkProps> = [ 
-{name: "Hackathon", description: "Hackathon description", link:"#", image:"favicon.ico"},
-{name: "Game Jam", description: "Game Jam description", link:"#", image:"favicon.ico"},
-{name: "Game Jam", description: "Game Jam description", link:"#", image:"favicon.ico"},
-{name: "Game Jam", description: "Game Jam description", link:"#", image:"favicon.ico"},
-{name: "Game Jam", description: "Game Jam description", link:"#", image:"favicon.ico"},
-{name: "Game Jam", description: "Game Jam description", link:"#", image:"favicon.ico"},
+{name: "SBHS Hackathon", description: "Hackathon description", link:"#", image:"favicon.ico"},
+{name: "Shrouded Labyrinth - First Game Jam", description: "Game Jam description", link:"https://sevadusk.itch.io/shrouded-labyrinth", image:"/itch.png"},
 ]
 
 

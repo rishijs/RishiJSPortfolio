@@ -1,6 +1,6 @@
 import Image from "next/image";
-import {Props} from "../components/projectDetails";
-import ProjectDetails from "app/components/projectDetails";
+import {Props} from "../components/projectCard";
+import ProjectCard from "app/components/projectCard";
 
 export const metadata = {
   title: 'Projects',
@@ -46,7 +46,7 @@ export default function Projects() {
           <ul className="grid grid-cols-1 gap-2">
             {projects.map(function(item:Props) {
               const {name, description, ...remaining} = item
-              return <ProjectDetails
+              return <ProjectCard
                 key={item.name}
                 name={name}
                 description={description}

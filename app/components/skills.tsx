@@ -4,13 +4,24 @@ import Typography from "@mui/material/Typography";
 
 
 const skills:Array<SkillProps> = [ 
-    {name: "Skill1"},
-    {name: "Skill2"},
-    {name: "Skill3"},
-    {name: "Skill4"},
-    {name: "Skill5"},
-    {name: "Skill6"},
-    {name: "Skill7"}
+    {name: "Full Stack Development"},
+    {name: "Python"},
+    {name: "Java"},
+    {name: "Javascript"},
+    {name: "C/C++/C#"},
+    {name: "GDScript"},
+    {name: "SQL"},
+    {name: "React/Next.js"},
+    {name: "Tailwind CSS"},
+    {name: "Three.js"},
+    {name: "JDBC"},
+    {name: "Spring Boot"},
+    {name: "Git"},
+    {name: "Godot"},
+    {name: "Unreal Engine"},
+    {name: "Unity"},
+    {name: "Computer Algorithms"},
+    {name: "Data Structure"},
   ]
 
 export default function Skills(){

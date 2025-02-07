@@ -20,7 +20,7 @@ export default function DataCard(props?: SkillProps) {
     <Button
         className="hover:text-black border-2 border-solid border-white hover:!bg-red-500"
         >
-        <Typography className="text-white text-xs md:text-sm lg:text-base text-start break-all">{props.name}</Typography>
+        <Typography className="!text-xs text-white text-start break-words">{props.name}</Typography>
     </Button>
     );
 }
