@@ -1,26 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
 import Skills from "./skills";
-import ProfileFooter from "./profileFooter";
+import GithubProfile from "./githubProfile";
+import ProfileNotables from "./profileNotables";
 
 export default function Profile() {
   const pdfUrl = "/resume.pdf";
 
   return (
     <div className="grid gap-2 grid-cols-1">
-        <div className="grid grid-cols-3 text-2xl font-semibold tracking-tighter">
+        <div className="grid grid-cols-3 gap-8 text-2xl font-semibold tracking-tighter">
             <div className="grid grid-cols-1">
                 <h2 className="mb-2">
                     {`Rishi Jammalamadaka, rishi.rjsd@gmail.com`}
                 </h2>
-                <Link href="/resume.pdf" target="_blank">
-                    <button
-                    className="border border-solid border-white bg-foreground w-48 hover:!bg-red-500">
+                <Link href="/resume.pdf" target="_blank"
+                    className="text-center border border-solid border-white bg-foreground h-fit w-48 hover:!bg-red-500">
                     View Resume
-                    </button>
                 </Link>
             </div>
-            <img src="/rishi1.jpg" className="ml-12 w-fit h-fit"/>
+            <img src="/rishi1.jpg" className="ml-2 w-fit h-fit"/>
+            <div className="h-fit">
+                <ProfileNotables />
+            </div>
         </div>
         
         <h1 className="mb-4">
@@ -40,8 +42,9 @@ export default function Profile() {
         </h1>
 
         <div className="mb-4">
-            <ProfileFooter/>
+            <GithubProfile/>
         </div>
+
         <Skills/>
         
     </div>

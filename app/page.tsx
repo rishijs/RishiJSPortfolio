@@ -3,6 +3,7 @@ import Profile from 'app/components/profile'
 import Events from './components/events'
 import Sequence from './components/sequence'
 import { UpdatePostsHighlights } from './components/postHighlights'
+import Github from './components/githubProfile'
 
 export const metadata = {
   title: 'RishiJS Home',
