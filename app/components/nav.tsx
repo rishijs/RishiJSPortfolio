@@ -3,23 +3,18 @@ import Link from 'next/link'
 const navItems = {
   '/': {
     name: 'home',
-    new_tab: false,
   },
   '/projects': {
     name: 'projects',
-    new_tab: false,
   },
   '/update': {
     name: 'updates',
-    new_tab: false,
   },
   '/contact': {
     name: 'contact',
-    new_tab: false,
   },
-  'https://rishijs.github.io': {
-    name: 'threeJET',
-    new_tab: true,
+  '/creative': {
+    name: 'creative',
   },
 }
 
@@ -32,13 +27,11 @@ export function Navbar() {
           id="nav"
         >
           <div className="flex flex-row space-x-0 pr-10">
-            {Object.entries(navItems).map(([path, { name, new_tab }]) => {
+            {Object.entries(navItems).map(([path, { name }]) => {
               return (
                 <Link
                   key={path}
                   href={path}
-                  target={new_tab ? "_blank":"_self"}
-                  rel={new_tab ? "noopener noreferrer" : undefined}
                   className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
                 >
                   {name}

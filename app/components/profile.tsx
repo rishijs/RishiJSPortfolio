@@ -8,7 +8,7 @@ export default function Profile() {
 
   return (
     <div className="grid gap-2 grid-cols-1">
-        <div className="grid gap-10 grid-cols-3 text-2xl font-semibold tracking-tighter items-center justify-center">
+        <div className="grid grid-cols-3 text-2xl font-semibold tracking-tighter">
             <div className="grid grid-cols-1">
                 <h2 className="mb-2">
                     {`Rishi Jammalamadaka, rishi.rjsd@gmail.com`}
@@ -20,12 +20,13 @@ export default function Profile() {
                     </button>
                 </Link>
             </div>
-            <img src="/rishi1.jpg" className="ml-48 w-fit h-fit"/>
+            <img src="/rishi1.jpg" className="ml-12 w-fit h-fit"/>
         </div>
         
-        <h1 className="mb-4 text-center">
-            {`Software Engineer and Game Developer B.S. Computer Science Graduate
-            `}
+        <h1 className="mb-4">
+            {`Full Stack Developer & Jack of All Trades`}
+            <br/> 
+            {`B.S. Computer Science Graduate `}
             <a 
                 href="https://newbrunswick.rutgers.edu/?utm_source=rutgers.edu&utm_medium=web&utm_campaign=uwide_sliver_new" 
                 target="_blank" 
@@ -37,9 +38,11 @@ export default function Profile() {
             <br/> 
             {`Working on Freelance Projects and looking for Full Time Roles`} 
         </h1>
-        <Skills/>
 
-        <ProfileFooter/>
+        <div className="mb-4">
+            <ProfileFooter/>
+        </div>
+        <Skills/>
         
     </div>
   );

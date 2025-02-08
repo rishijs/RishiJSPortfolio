@@ -15,7 +15,7 @@ const defaultBasic:SkillProps = {
 };
 
 export default function DataCard(props?: SkillProps) {
-    props = props ?? defaultBasic;
+    props = { ...defaultBasic, ...props };
     return(
     <Button
         className="hover:text-black border-2 border-solid border-white hover:!bg-red-500"

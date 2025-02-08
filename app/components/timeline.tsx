@@ -14,7 +14,7 @@ const Timeline = ({ items }) => {
 
           <div className={`w-5/12 p-4 bg-black shadow-md border border-solid border-white ${index % 2 === 0 ? "text-right" : "text-left"}`}>
             <time className="block text-sm font-bold text-white">{item.date}</time>
-            <p className="text-white">{item.description}</p>
+            <p className="text-white text-xs">{item.description}</p>
             <div className="flex flex-col">
               <ul
                 className={`flex flex-wrap gap-2 mt-4 ${index % 2 === 0 ? "justify-end" : "justify-start"}`}

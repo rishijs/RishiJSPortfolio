@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ProfileFooter() {
     return(
-        <div className="flex gap-6 flex-wrap items-center justify-center mt-4">
+        <div className="flex gap-6 flex-wrap items-center">
             <Link
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
             href="https://linkedin.com/in/rishij02"
@@ -19,6 +19,7 @@ export default function ProfileFooter() {
             />
             Linkedin
             </Link>
+
             <Link
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
             href="https://github.com/rishijs"
@@ -34,6 +35,7 @@ export default function ProfileFooter() {
             />
             Github
             </Link>
+
             <Link
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
             href="https://sevadusk.itch.io"
@@ -48,6 +50,22 @@ export default function ProfileFooter() {
                 height={16}
             />
             Itch.io Game Portfolio
+            </Link>
+
+            <Link
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://rishijs.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            <Image
+                aria-hidden
+                src="/git.png"
+                alt="threeJS"
+                width={16}
+                height={16}
+            />
+            threeJET
             </Link>
         </div>
     );

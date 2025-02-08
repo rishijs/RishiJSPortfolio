@@ -17,11 +17,11 @@ const defaultLink:LinkProps = {
 };
 
 export default function DataCard(props?: LinkProps) {
-    props = props ?? defaultLink;
+  props = { ...defaultLink, ...props };
 
     return (
         <Link
-            className="border-2 border-solid !border-white hover:!border-red-500 hover:!border-4 flex flex-col items-center justify-center p-4 h-48"
+            className="border-2 border-solid !border-white hover:!border-red-500 hover:!border-4 flex flex-col items-center justify-center p-4 h-32"
             href={props.link!}
             target="_blank" 
             rel="noopener noreferrer"
@@ -29,10 +29,7 @@ export default function DataCard(props?: LinkProps) {
           <Typography className="text-white !font-semibold !tracking-tighter text-center break-words text-xs md:text-sm lg:text-base">
             {props.name}
           </Typography>
-          <Typography className="text-white !font-semibold !tracking-tighter hidden sm:flex text-xs md:text-sm lg:text-base text-center break-words">
-            {props.description}
-          </Typography>
-          <img src={props.image!} alt="Event" className="h-24 w-24 mt-2" />
+          <img src={props.image!} alt="Event" className="h-12 w-12 mt-2" />
         </Link>
       );
       

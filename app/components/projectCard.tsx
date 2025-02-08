@@ -3,45 +3,42 @@ import Button from '@mui/material/Button';
 import { PropsWithChildren } from 'react';
 import Link from "next/link";
 
-export interface Props extends PropsWithChildren<any>{
+export interface ProjectProps extends PropsWithChildren<any>{
     name?: string,
     basic_description?: string
     description?: string,
     image?: string,
 }
   
-const defaultProps:Props = {
+const defaultProps:ProjectProps = {
     name: "Default",
     description: "Basic Project Description",
     image: '/git.png'
 };
 
-export default function ProjectDetails(props: Props) {
-    const name = props.name ?? defaultProps.name
-    const description = props.description?? defaultProps.description
-    const image = props.image ?? defaultProps.image
+export default function ProjectDetails(props: ProjectProps) {
+    props = { ...defaultProps, ...props };
 
     return(
-        <Link
-            className="flex !border-2 !border-white 
-             bg-black
-            gap-32 hover:!border-red-500 hover:!border-4
-            w-full h-32"
-            href="/projectPages"
-            >
-            <div className="flex items-center ml-12">
-                <img
-                    src={image!}
-                    alt="Project"
-                    className="h-12 w-12"
-                />
+        <Link href="/projectPages" passHref legacyBehavior>
+        <a
+            className="flex border-2 border-white bg-black gap-8
+            hover:border-red-500 hover:border-4 w-full h-24"
+        >
+            <div className="flex items-center ml-8">
+            <Image
+                src={props.image!}
+                alt="Project"
+                width={48}
+                height={48}
+                className="h-12 w-12 object-scale-down"
+            />
             </div>
-            <div className="container items-center content-center justify-end">
-                <div className="grid grid-cols-1 text-white">
-                    <a>{name}</a>
-                    <a>{description}</a>
-                </div>
+            <div className="flex flex-col justify-center text-white pr-4">
+            <span className="font-bold">{props.name}</span>
+            <span className="text-xs">{props.description!.split("\n").map((line, index) => <span key={index}>{line}<br /></span>)}</span>
             </div>
+        </a>
         </Link>
     );
 }
