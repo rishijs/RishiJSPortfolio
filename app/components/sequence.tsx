@@ -54,7 +54,7 @@ const timelineItems = [
     {
         date: "2024-Present",
         description: "Started work on a professional personal portfolio, but wasn't satisfied with its format until recently in 2025.",
-        cards:[{name: "Python"}, {name: "Javascript"}, {name: "Artificial Intelligence"}, {name: "LLM"}, {name: "Misc."}],
+        cards:[{name: "Three.js"}, {name: "Javascript"}, {name: "Typescript"}, {name: "Tailwind"}, {name: "React"}, {name: "Next"}],
     },
     {
         date: "2025",

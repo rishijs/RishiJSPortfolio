@@ -20,11 +20,11 @@ async function fetchReadme() {
     const repo = username;
 
     const response = await fetch(
-        `https://api.github.com/repos/${username}/${repo}/readme`,
+        `https://api.github.com/repos/${username}/${repo}/readme?timestamp=${Date.now()}`, 
         {
-        headers: {
-            Accept: "application/vnd.github.v3.raw",
-        },
+            headers: {
+                Accept: "application/vnd.github.v3.raw",
+            },
         }
     );
 
