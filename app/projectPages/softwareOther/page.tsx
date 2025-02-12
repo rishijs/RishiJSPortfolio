@@ -2,7 +2,7 @@ import { UpdatePosts } from 'app/components/posts'
 import ProjectList from 'app/components/projectList'
 import Projects from 'app/projects/page'
 import Link from 'next/link'
-import Image from 'next/Image'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Software Other',
