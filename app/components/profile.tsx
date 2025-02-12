@@ -4,7 +4,7 @@ import Skills from "./skills";
 import GithubProfile from "./githubProfile";
 import ProfileNotables from "./profileNotables";
 
-export default function Profile() {
+export default async function Profile() {
   const pdfUrl = "/resume.pdf";
 
   return (

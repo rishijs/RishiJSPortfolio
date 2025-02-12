@@ -1,6 +1,4 @@
 import Image from "next/image";
-import {Props} from "../components/projectCard";
-import ProjectCard from "app/components/projectCard";
 import Events from "app/components/events";
 import ProjectList from "app/components/projectList";
 
