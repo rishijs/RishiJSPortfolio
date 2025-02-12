@@ -34,7 +34,7 @@ async function fetchReadme() {
   
 function parseReadme(content: string) {
     const imgRegex = /<img\s+[^>]*src=["']([^"']+)["'][^>]*>/gi;
-    const parts: (string | JSX.Element)[] = [];
+    const parts: (string | React.ReactNode)[] = [];
     let lastIndex = 0;
 
     content.replace(imgRegex, (match, src, index) => {
