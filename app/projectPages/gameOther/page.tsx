@@ -11,7 +11,7 @@ export const metadata = {
 export default function Page() {
   return (
     <section className="grid grid-cols-1 gap-2">
-      <h1 className="font-semibold text-2xl tracking-tighter">Project Base</h1>
+      <h1 className="font-semibold text-2xl tracking-tighter">Game Development</h1>
       <a className="text-sm tracking-tighter mb-4">These are the other games I have worked on</a>
       <div className="mb-8">
         <Events />
