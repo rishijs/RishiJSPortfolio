@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <section className="mb-4">
       <h1 className="font-semibold text-2xl tracking-tighter mb-4">Creative Works</h1>
-      <a className="text-sm tracking-tighter mb-4">This is a placeholder description</a>
+      <a className="text-sm tracking-tighter mb-4">(Work in progress)</a>
 
     </section>
   )

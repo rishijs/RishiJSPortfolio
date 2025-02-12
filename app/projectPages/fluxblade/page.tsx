@@ -17,7 +17,7 @@ export default function Page() {
 
       <Link
           className="text-white! !text-lg  flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://sevadusk.itch.io/fluxblade"
+          href="https://sevadusk.itch.io/fluxblade-sandbox"
           target="_blank"
           rel="noopener noreferrer"
       >
