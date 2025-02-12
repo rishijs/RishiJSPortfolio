@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 ::selection {
-  background-color: #47a3f3;
+  background-color: #f34747;
   color: #fefefe;
 }
 
@@ -29,13 +29,8 @@
   }
 }
 
-html {
-  min-width: 360px;
-}
-
 .prose .anchor {
   @apply absolute invisible no-underline;
-
   margin-left: -1em;
   padding-right: 0.5em;
   width: 80%;
@@ -138,16 +133,13 @@ input[type='email'] {
   appearance: none;
 }
 
-
 .MuiInputBase-input {
   color: white !important;
 }
 
-
 .MuiInputBase-input::placeholder {
   color: #9ca3af !important;
 }
-
 
 @media (prefers-color-scheme: dark) {
   .MuiInputBase-input {

@@ -21,11 +21,11 @@ const defaultProps:ProjectProps = {
 export default function ProjectDetails(props: ProjectProps) {
     props = { ...defaultProps, ...props };
     const projectPageUrl = `/projectPages/${props.routingUrl}`;
-    
+
     return(
         <Link href={projectPageUrl} legacyBehavior>
         <a
-            className="flex border-2 border-white bg-black gap-8
+            className="hover:animate-bounce flex border-2 border-white bg-black gap-8
             hover:border-red-500 hover:border-4 w-full h-24"
         >
             <div className="flex items-center ml-8">

@@ -10,7 +10,7 @@ const Timeline = ({ items }) => {
       {items.map((item, index) => (
         <div key={index} className={`relative flex items-center w-full my-8 ${index % 2 === 0 ? "justify-start" : "justify-end"}`}>
 
-          <div className="absolute left-1/2 w-4 h-4 bg-black rounded-full transform -translate-x-1/2"></div>
+          <div className="absolute left-1/2 w-4 h-4 bg-gray-300 rounded-full transform -translate-x-1/2"></div>
 
           <div className={`w-5/12 p-4 bg-black shadow-md border border-solid border-white ${index % 2 === 0 ? "text-right" : "text-left"}`}>
             <time className="block text-sm font-bold text-white">{item.date}</time>

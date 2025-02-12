@@ -65,7 +65,7 @@ export default function Contact() {
                     <div className="flex flex-col gap-6">
                         <FormControl fullWidth>
                             <OutlinedInput
-                                className="border border-gray-500"
+                                className="border border-white"
                                 placeholder="Full Name"
                                 name="fullname"
                                 value={formData.fullname}
@@ -75,7 +75,7 @@ export default function Contact() {
                         </FormControl>
                         <FormControl fullWidth>
                             <OutlinedInput
-                                className="border border-gray-500"
+                                className="border border-white"
                                 placeholder="Email"
                                 type="email"
                                 name="email"
@@ -86,7 +86,7 @@ export default function Contact() {
                         </FormControl>
                         <FormControl fullWidth>
                             <OutlinedInput
-                                className="border border-gray-500"
+                                className="border border-white"
                                 placeholder="Subject"
                                 name="subject"
                                 value={formData.subject}
@@ -99,7 +99,7 @@ export default function Contact() {
                     <div>
                         <FormControl fullWidth>
                             <OutlinedInput
-                                className="border border-gray-500 w-full"
+                                className="border border-white w-full"
                                 placeholder="Message"
                                 name="message"
                                 multiline
