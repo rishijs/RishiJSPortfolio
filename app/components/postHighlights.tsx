@@ -21,7 +21,7 @@ export function UpdatePostsHighlights() {
             className="flex flex-col space-y-1"
             href={`/update/${post.slug}`}
           >
-            <div className="flex items-center mt-1 mb-1 text-sm w-full flex-wrap">
+            <div className="hover:animate-pulse flex items-center mt-1 mb-1 text-sm w-full flex-wrap">
               <h1 className="title font-semibold text-xl tracking-tighter">
                 {post.metadata.title}
               </h1>
