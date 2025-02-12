@@ -19,7 +19,7 @@ export default async function Profile() {
                     View Resume
                 </Link>
             </div>
-            <img src="/rishi2.jpg" className="ml-2 w-fit h-fit"/>
+            <img src="/rishi4.jpg" className="ml-2 w-fit h-fit"/>
             <div className="h-fit">
                 <ProfileNotables />
             </div>
