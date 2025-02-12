@@ -8,19 +8,22 @@ export interface ProjectProps extends PropsWithChildren<any>{
     basic_description?: string
     description?: string,
     image?: string,
+    routingUrl?: string,
 }
   
 const defaultProps:ProjectProps = {
     name: "Default",
     description: "Basic Project Description",
-    image: '/git.png'
+    image: '/git.png',
+    routingUrl: ''
 };
 
 export default function ProjectDetails(props: ProjectProps) {
     props = { ...defaultProps, ...props };
-
+    const projectPageUrl = `/projectPages/${props.routingUrl}`;
+    
     return(
-        <Link href="/projectPages" passHref legacyBehavior>
+        <Link href={projectPageUrl} legacyBehavior>
         <a
             className="flex border-2 border-white bg-black gap-8
             hover:border-red-500 hover:border-4 w-full h-24"

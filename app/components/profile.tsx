@@ -26,7 +26,7 @@ export default async function Profile() {
         </div>
         
         <h1 className="mb-4">
-            {`Full Stack Developer & Jack of All Trades`}
+            {/*`Full Stack Developer & Jack of All Trades`*/}
             <br/> 
             {`B.S. Computer Science Graduate `}
             <a 

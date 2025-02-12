@@ -12,7 +12,6 @@ export default function Projects() {
     <div className="grid grid-cols-1 mb-12 gap-10">
 
         <ProjectList />
-        <Events />
 
     </div>
   );

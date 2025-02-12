@@ -5,70 +5,70 @@ const projects:Array<ProjectProps> = [
     {
       name: "Social Media Backend",
       description: "A back-end focused social media API made with a team of 2 \n Uses JDBC, Spring Boot, and a postgreSQL relational database",
-      image: "/git.png"
+      image: "/projecticons/spring_social_media.png",
+      routingUrl: 'socialMedia'
     },
     {
       name: "Console Spot",
       description: "A front-end focused e-commerce website, made with a team of 4 \n Uses JDBC, Apache Tomcat, and a mySQL relational database",
-      image: "/git.png"
+      image: "/projecticons/console_spot.png",
+      routingUrl: 'consoleSpot'
     },
     {
       name: "threeJET",
       description: "A gamified 3D portfolio made with three.js",
-      image: "/git.png"
+      image: "/projecticons/threeJet.png",
+      routingUrl: 'threeJet'
     },
     {
       name: "More Software Projects",
       description: "Other coursework and personal projects worth exploring",
-      image: "/git.png"
+      image: "/git.png",
+      routingUrl: 'softwareOther'
     },
     {
       name: "Fluxblade",
       description: "A 2-year long game project in Unreal Engine inspired by Destiny",
-      image: "/git.png"
+      image: "/projecticons/fluxblade.png",
+      routingUrl: 'fluxblade'
     },
     {
-      name: "Honorbound",
-      description: "A year long game project in Unreal Engine focused on game system architecture",
-      image: "/git.png"
-    },
-    {
-      name: "Eternal Harvest",
-      description: "A 3d tower defense game in Godot based on Plants vs. Zombies \n Made in 9 days with a team of 4",
-      image: "/git.png"
-    },
-    {
-      name: "Project Astra",
-      description: "A 3d FPS game made in Godot with procedural generation \n Made in 14 days as a solo developer",
-      image: "/git.png"
+      name: "Spectral War",
+      description: "A 3d RTS game made in Godot with a team of 9 interdisciplinary developers",
+      image: "/projecticons/spectral_war.png",
+      routingUrl: 'spectralWar'
     },
     {
       name: "Skyfall",
       description: "A 2d action puzzle game made in Godot inspired by tetris \n Worked on multiple large scope updates to enhance UX and gameplay features",
-      image: "/git.png"
+      image: "/projecticons/skyfall.png",
+      routingUrl: 'skyfall'
     },
     {
       name: "Spiritbane",
-      description: "A 2d action game made in Godot inspired by whack-a-mole ",
-      image: "/git.png"
+      description: "Collect souls using a weapon that harvests power from them in an action arcade game made in Godot within 9 days",
+      image: "/projecticons/spiritbane.png",
+      routingUrl: 'spiritbane'
     },
     {
       name: "More Game Development Projects",
       description: "Other games worth exploring",
-      image: "/git.png"
+      image: "/itch.png",
+      routingUrl: 'gameOther'
     },
   ];
 
 export default function ProjectList(){
     return (
-        <div>
+        <div className="mb-8">
             <ul className="grid grid-cols-1 gap-4">
             {projects.map(function(item:ProjectProps) {
-                const {name, description,image} = item
+                const {name, description,image, routingUrl} = item
                 return <ProjectCard
                 key={name}
                 name={name}
                 image={image}
+                routingUrl={routingUrl}
                 description={description}
                 />
             })}

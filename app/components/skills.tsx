@@ -22,6 +22,7 @@ const skills:Array<SkillProps> = [
     {name: "Unity"},
     {name: "Computer Algorithms"},
     {name: "Data Structure"},
+    {name: "Object Oriented Programming"},
   ]
 
 export default function Skills(){
