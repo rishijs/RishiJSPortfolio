@@ -68,7 +68,7 @@ export default function Sequence() {
 
     return (
         <div className="items-center justify-center">
-            <Timeline items={timelineItems} />
+            <Timeline items={timelineItems.reverse()} />
         </div>
     );
 
