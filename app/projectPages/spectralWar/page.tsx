@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <section className="grid grid-cols-1 gap-2">
       <h1 className="font-semibold text-2xl tracking-tighter">Spectral War</h1>
-      <a className="text-sm tracking-tighter mb-4">(Placeholder Project Description)</a>
+      <a className="text-sm tracking-tighter mb-4">Worked on a team of 9 to make an RTS inspired by 'starcraft'</a>
 
       <Link
           className="text-white! !text-lg  flex items-center gap-2 hover:underline hover:underline-offset-4"

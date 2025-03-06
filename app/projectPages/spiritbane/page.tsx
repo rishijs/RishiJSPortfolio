@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <section className="grid grid-cols-1 gap-2">
       <h1 className="font-semibold text-2xl tracking-tighter">Spiritbane</h1>
-      <a className="text-sm tracking-tighter mb-4">(Placeholder Project Description)</a>
+      <a className="text-sm tracking-tighter mb-4">Made an action arcade game inspired by 'whack-a-mole'</a>
 
       <Link
           className="text-white! !text-lg  flex items-center gap-2 hover:underline hover:underline-offset-4"

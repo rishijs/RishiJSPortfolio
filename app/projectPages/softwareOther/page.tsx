@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <section className="grid grid-cols-1 gap-2">
       <h1 className="font-semibold text-2xl tracking-tighter">Software Engineering</h1>
-      <a className="text-sm tracking-tighter">(Placeholder Project Description)</a>
+      <a className="text-sm tracking-tighter">No other software projects listed here for the moment.</a>
       <Link
           className="text-white! !text-lg  flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://github.com/rishijs"

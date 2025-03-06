@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <section className="grid grid-cols-1 gap-2">
       <h1 className="font-semibold text-2xl tracking-tighter">Skyfall</h1>
-      <a className="text-sm tracking-tighter mb-4">(Placeholder Project Description)</a>
+      <a className="text-sm tracking-tighter mb-4">A 2d-game made in Godot with a unique take on an action puzzle game inspired by 'tetris'</a>
 
       <Link
           className="text-white! !text-lg  flex items-center gap-2 hover:underline hover:underline-offset-4"
