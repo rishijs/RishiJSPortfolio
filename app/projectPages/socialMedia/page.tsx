@@ -23,7 +23,7 @@ export default function Page() {
           target="_blank"
           rel="noopener noreferrer"
       >
-          <Image aria-hidden src="/github.png" alt="github page" width={16} height={16} />
+          <Image aria-hidden src="/git.png" alt="github page" width={16} height={16} />
           Github
       </Link>
 

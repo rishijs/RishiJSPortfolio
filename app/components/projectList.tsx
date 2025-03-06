@@ -3,6 +3,18 @@ import ProjectCard from "app/components/projectCard";
 
 const projects:Array<ProjectProps> = [
     {
+      name: "Project Manager",
+      description: "A full stack web application made with a Spring Boot back-end with postgreSQL and an Angular front-end",
+      image: "/projectpictures/projectmanager/erd.png",
+      routingUrl: 'projectManager'
+    },
+    {
+      name: "Track Matcher",
+      description: "Front-end focused game modes made using Angular and the Spotify API",
+      image: "/projectpictures/trackmatcher/track_matcher.gif",
+      routingUrl: 'trackMatcher'
+    },
+    {
       name: "Social Media Backend",
       description: "A back-end focused social media API made with a team of 2 \n Uses JDBC, Spring Boot, and a postgreSQL relational database",
       image: "/projecticons/spring_social_media.png",
