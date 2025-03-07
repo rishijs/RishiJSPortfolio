@@ -12,7 +12,7 @@ export default async function Profile() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-xl md:text-2xl font-semibold tracking-tighter items-center">
             <div className="flex flex-col items-center md:items-start">
-                <h2 className="mb-2">
+                <h2 className="mb-2 text-center">
                     {`Rishi Jammalamadaka, rishi.rjsd@gmail.com`}
                 </h2>
                 <Link
