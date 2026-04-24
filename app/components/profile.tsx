@@ -25,7 +25,7 @@ export default async function Profile() {
             </div>
 
             <div className="flex justify-center">
-                <img src="/rishi.jpg" className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full" />
+                <img src="/creative/knight_still.png" className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full" />
             </div>
 
             <div className="h-fit flex justify-center md:justify-start">
@@ -47,7 +47,7 @@ export default async function Profile() {
              @Rutgers New Brunswick
             </a>
             <br/> 
-            {`Working on Freelance Projects and looking for Full Time Roles`} 
+
         </h1>
 
         <div className="mb-4">
