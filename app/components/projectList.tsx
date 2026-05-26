@@ -9,12 +9,6 @@ const projects:Array<ProjectProps> = [
       routingUrl: 'liferoot'
     },
     {
-      name: "Mini Twitter Backend",
-      description: "A back-end focused social media API made with a team of 2 \n Uses JDBC, Spring Boot, and a postgreSQL relational database",
-      image: "/projecticons/spring_social_media.png",
-      routingUrl: 'socialMedia'
-    },
-    {
       name: "WIP: Unannounced AWS Project",
       description: "This project is currently a work in progress. Stay tuned for more details!",
       image: "/projecticons/spring_social_media.png",
@@ -24,37 +18,19 @@ const projects:Array<ProjectProps> = [
       name: "WIP: Unannounced Full Stack Project",
       description: "This project is currently a work in progress. Stay tuned for more details!",
       image: "/projecticons/spring_social_media.png",
-      routingUrl: 'fullStackProject'
-    },
-    {
-      name: "Skyfall",
-      description: "A 2d action puzzle game made in Godot inspired by tetris \n Worked on multiple large scope updates to enhance UX and gameplay features",
-      image: "/projecticons/skyfall.png",
-      routingUrl: 'skyfall'
-    },
-    {
-      name: "Spiritbane",
-      description: "Collect souls using a weapon that harvests power from them in an action arcade game made in Godot within 9 days",
-      image: "/projecticons/spiritbane.png",
-      routingUrl: 'spiritbane'
-    },
-    {
-      name: "Striker",
-      description: "....",
-      image: "/projecticons/spiritbane.png",
-      routingUrl: 'striker'
+      routingUrl: 'fullstackProject'
     },
     {
       name: "More Software Projects",
-      description: "Other coursework and software projects worth exploring",
+      description: "Software projects and coursework pulled directly from github public repositories",
       image: "/git.png",
-      routingUrl: 'softwareOther'
+      routingUrl: 'softwareProjects'
     },
     {
       name: "More Game Development Projects",
-      description: "Other games worth exploring",
+      description: "Game development projects pulled directly from itch.io, including prototypes, game jam entries, and creative efforts",
       image: "/itch.png",
-      routingUrl: 'gameOther'
+      routingUrl: 'gameProjects'
     },
   ];
 

@@ -47,10 +47,10 @@ async function fetchPublicItchGames(): Promise<Array<LinkProps>> {
     const xmlText = await response.text();
     
     const itemRegex = /<item>([\s\S]*?)<\/item>/g;
-    const titleRegex = /<title>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?<\/title>/;
-    const linkRegex = /<link>(.*?)<\/link>/;
+    const titleRegex = /<title>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/title>/;
+    const linkRegex = /<link>([\s\S]*?)<\/link>/;
     const imageRegex = /<description>[\s\S]*?src="(.*?)"/;
-    const descriptionRegex = /<description><!\[CDATA\[(.*?)\]\]><\/description>/;
+    const descriptionRegex = /<description>[\s\S]*?<!\[CDATA\[([\s\S]*?)\]\]>[\s\S]*?<\/description>/;
 
     const matches = Array.from(xmlText.matchAll(itemRegex));
     

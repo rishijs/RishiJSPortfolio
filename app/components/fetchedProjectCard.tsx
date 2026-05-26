@@ -34,12 +34,12 @@ export default function DataCard(props: LinkProps) {
             className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-80 transition-opacity duration-300" 
           />
           <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
-          <div className="relative z-10 flex flex-col items-center gap-2 w-full px-2">
-            <Typography className="text-white !font-bold !tracking-tight text-center break-words text-xs md:text-sm drop-shadow-md">
+          <div className="relative z-10 flex flex-col items-center justify-center gap-1 w-full px-2 transition-transform duration-300 group-hover:-translate-y-1">
+            <Typography className="text-white !font-bold !tracking-tight text-center break-words text-xs md:text-sm drop-shadow-lg">
               {name}
             </Typography>
             {description && (
-              <Typography className="text-neutral-200 !text-[10px] text-center line-clamp-3 leading-tight drop-shadow-md">
+              <Typography className="opacity-0 group-hover:opacity-100 text-neutral-100 !text-[10px] text-center line-clamp-2 leading-tight drop-shadow-md transition-opacity duration-300">
                 {description}
               </Typography>
             )}

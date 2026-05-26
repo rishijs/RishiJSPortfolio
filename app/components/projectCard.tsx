@@ -34,9 +34,11 @@ export default function ProjectDetails(props: ProjectProps) {
                 fill
                 className="object-cover opacity-20 group-hover:opacity-60 transition-opacity duration-300"
             />
-            <div className="relative z-10 flex flex-col justify-center text-white pl-8 pr-4">
+            <div className="relative z-10 flex flex-col justify-center text-white pl-8 pr-4 transition-transform duration-300 group-hover:translate-x-2">
                 <span className="font-bold drop-shadow-md">{props.name}</span>
-                <span className="text-xs drop-shadow-md">{props.description!.split("\n").map((line, index) => <span key={index}>{line}<br /></span>)}</span>
+                <span className="text-xs text-neutral-300 drop-shadow-md line-clamp-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {props.description}
+                </span>
             </div>
         </a>
         </Link>
