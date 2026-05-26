@@ -3,52 +3,28 @@ import ProjectCard from "app/components/projectCard";
 
 const projects:Array<ProjectProps> = [
     {
-      name: "Project Manager",
-      description: "A full stack web application made with a Spring Boot back-end with postgreSQL and an Angular front-end",
-      image: "/projectpictures/projectmanager/erd.png",
-      routingUrl: 'projectManager'
+      name: "Liferoot",
+      description: "Collect souls using a weapon that harvests power from them in an action arcade game made in Godot within 9 days",
+      image: "/projecticons/spiritbane.png",
+      routingUrl: 'liferoot'
     },
     {
-      name: "Track Matcher",
-      description: "Front-end focused game modes made using Angular and the Spotify API",
-      image: "/projectpictures/trackmatcher/track_matcher.gif",
-      routingUrl: 'trackMatcher'
-    },
-    {
-      name: "Social Media Backend",
+      name: "Mini Twitter Backend",
       description: "A back-end focused social media API made with a team of 2 \n Uses JDBC, Spring Boot, and a postgreSQL relational database",
       image: "/projecticons/spring_social_media.png",
       routingUrl: 'socialMedia'
     },
     {
-      name: "Console Spot",
-      description: "A front-end focused e-commerce website, made with a team of 4 \n Uses JDBC, Apache Tomcat, and a mySQL relational database",
-      image: "/projecticons/console_spot.png",
-      routingUrl: 'consoleSpot'
+      name: "WIP: Unannounced AWS Project",
+      description: "A back-end focused social media API made with a team of 2 \n Uses JDBC, Spring Boot, and a postgreSQL relational database",
+      image: "/projecticons/spring_social_media.png",
+      routingUrl: 'awsProject'
     },
     {
-      name: "threeJET",
-      description: "A gamified 3D portfolio made with three.js",
-      image: "/projecticons/threeJet.png",
-      routingUrl: 'threeJet'
-    },
-    {
-      name: "More Software Projects",
-      description: "Other coursework and personal projects worth exploring",
-      image: "/git.png",
-      routingUrl: 'softwareOther'
-    },
-    {
-      name: "Fluxblade",
-      description: "A 2-year long game project in Unreal Engine inspired by Destiny",
-      image: "/projecticons/fluxblade.png",
-      routingUrl: 'fluxblade'
-    },
-    {
-      name: "Spectral War",
-      description: "A 3d RTS game made in Godot with a team of 9 interdisciplinary developers",
-      image: "/projecticons/spectral_war.png",
-      routingUrl: 'spectralWar'
+      name: "WIP: Unannounced Full Stack Project",
+      description: "A back-end focused social media API made with a team of 2 \n Uses JDBC, Spring Boot, and a postgreSQL relational database",
+      image: "/projecticons/spring_social_media.png",
+      routingUrl: 'fullStackProject'
     },
     {
       name: "Skyfall",
@@ -61,6 +37,18 @@ const projects:Array<ProjectProps> = [
       description: "Collect souls using a weapon that harvests power from them in an action arcade game made in Godot within 9 days",
       image: "/projecticons/spiritbane.png",
       routingUrl: 'spiritbane'
+    },
+    {
+      name: "Striker",
+      description: "Collect souls using a weapon that harvests power from them in an action arcade game made in Godot within 9 days",
+      image: "/projecticons/spiritbane.png",
+      routingUrl: 'striker'
+    },
+    {
+      name: "More Software Projects",
+      description: "Other coursework and software projects worth exploring",
+      image: "/git.png",
+      routingUrl: 'softwareOther'
     },
     {
       name: "More Game Development Projects",

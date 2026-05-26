@@ -25,7 +25,7 @@ export default function ProjectDetails(props: ProjectProps) {
     return(
         <Link href={projectPageUrl} legacyBehavior>
         <a
-            className="hover:animate-bounce flex border-2 border-white bg-black gap-8
+            className="flex border-2 border-white bg-black gap-8
             hover:border-red-500 hover:border-4 w-full h-24"
         >
             <div className="flex items-center ml-8">

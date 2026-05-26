@@ -3,27 +3,37 @@ import {SkillProps} from "../components/skillCard"
 import Typography from "@mui/material/Typography";
 
 
-const skills:Array<SkillProps> = [ 
-    {name: "Full Stack Development"},
-    {name: "Python"},
-    {name: "Java"},
-    {name: "Javascript"},
-    {name: "C/C++/C#"},
-    {name: "GDScript"},
-    {name: "SQL"},
-    {name: "React/Next.js"},
-    {name: "Tailwind CSS"},
-    {name: "Three.js"},
-    {name: "JDBC"},
-    {name: "Spring Boot"},
-    {name: "Git"},
-    {name: "Godot"},
-    {name: "Unreal Engine"},
-    {name: "Unity"},
-    {name: "Computer Algorithms"},
-    {name: "Data Structure"},
-    {name: "Object Oriented Programming"},
-  ]
+const skills: Array<SkillProps> = [
+  { name: "Java" },
+  { name: "TypeScript" },
+  { name: "Python" },
+  { name: "JavaScript" },
+  { name: "SQL" },
+
+  { name: "Spring Boot" },
+  { name: "React" },
+  { name: "Next.js" },
+  { name: "Tailwind CSS" },
+  { name: "Node.js" },
+
+  { name: "AWS" },
+  { name: "Cassandra" },
+  { name: "Redis" },
+  { name: "Jenkins" },
+  { name: "Git" },
+  { name: "GitHub" },
+  { name: "JMeter" },
+
+  { name: "Backend Development" },
+  { name: "Distributed Systems" },
+  { name: "Performance Optimization" },
+  { name: "Jenkins CI/CD" },
+
+  { name: "Godot" },
+  { name: "Unity" },
+  { name: "Unreal Engine" },
+  { name: "Three.js" },
+];
 
 export default function Skills(){
     return(
