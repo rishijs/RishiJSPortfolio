@@ -2,7 +2,7 @@ import ProjectCard from "./fetchedProjectCard";
 import {LinkProps} from "./fetchedProjectCard"
 import Typography from "@mui/material/Typography";
 
-export default async function OtherGames(){
+export default async function GameProjects(){
     let fetchedGames: Array<LinkProps> = [];
     let error: string | null = null;
 

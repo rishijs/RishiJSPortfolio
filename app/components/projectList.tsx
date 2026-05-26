@@ -4,8 +4,8 @@ import ProjectCard from "app/components/projectCard";
 const projects:Array<ProjectProps> = [
     {
       name: "Liferoot",
-      description: ".....",
-      image: "/projecticons/spiritbane.png",
+      description: "A procedurally generated 3D puzzle game built for Web and PC platforms. The player's goal is to expand their root system to 'decay' the sandbox environment.",
+      image: "/projectpictures/liferoot/cover.png",
       routingUrl: 'liferoot'
     },
     {

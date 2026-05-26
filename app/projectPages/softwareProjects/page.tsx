@@ -1,9 +1,5 @@
-import { UpdatePosts } from 'app/components/posts'
 import ProjectList from 'app/components/projectList'
-import Projects from 'app/projects/page'
-import Link from 'next/link'
-import Image from 'next/image'
-import OtherSoftware from 'app/components/otherSoftware'
+import SoftwareProjects from 'app/components/softwareProjects'
 
 export const metadata = {
   title: 'Software Other',
@@ -20,7 +16,7 @@ export default function Page() {
         </p>
       </div>
 
-      <OtherSoftware />
+      <SoftwareProjects />
 
       <div className="mt-12">
         <h1 className="font-semibold text-2xl tracking-tighter mb-4">Similar Projects</h1>
