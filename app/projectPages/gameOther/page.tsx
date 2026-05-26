@@ -1,4 +1,4 @@
-import Events from 'app/components/events'
+import OtherGames from 'app/components/otherGames'
 import { UpdatePosts } from 'app/components/posts'
 import ProjectList from 'app/components/projectList'
 import Projects from 'app/projects/page'
@@ -14,7 +14,7 @@ export default function Page() {
       <h1 className="font-semibold text-2xl tracking-tighter">Game Development</h1>
       <a className="text-sm tracking-tighter mb-4">These are the other games I have worked on</a>
       <div className="mb-8">
-        <Events />
+        <OtherGames />
       </div>
 
       <h1 className="font-semibold text-2xl tracking-tighter">Similar Projects</h1>
