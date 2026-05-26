@@ -4,7 +4,7 @@ import ProjectCard from "app/components/projectCard";
 const projects:Array<ProjectProps> = [
     {
       name: "Liferoot",
-      description: "Collect souls using a weapon that harvests power from them in an action arcade game made in Godot within 9 days",
+      description: ".....",
       image: "/projecticons/spiritbane.png",
       routingUrl: 'liferoot'
     },
@@ -16,13 +16,13 @@ const projects:Array<ProjectProps> = [
     },
     {
       name: "WIP: Unannounced AWS Project",
-      description: "A back-end focused social media API made with a team of 2 \n Uses JDBC, Spring Boot, and a postgreSQL relational database",
+      description: "This project is currently a work in progress. Stay tuned for more details!",
       image: "/projecticons/spring_social_media.png",
       routingUrl: 'awsProject'
     },
     {
       name: "WIP: Unannounced Full Stack Project",
-      description: "A back-end focused social media API made with a team of 2 \n Uses JDBC, Spring Boot, and a postgreSQL relational database",
+      description: "This project is currently a work in progress. Stay tuned for more details!",
       image: "/projecticons/spring_social_media.png",
       routingUrl: 'fullStackProject'
     },
@@ -40,7 +40,7 @@ const projects:Array<ProjectProps> = [
     },
     {
       name: "Striker",
-      description: "Collect souls using a weapon that harvests power from them in an action arcade game made in Godot within 9 days",
+      description: "....",
       image: "/projecticons/spiritbane.png",
       routingUrl: 'striker'
     },
