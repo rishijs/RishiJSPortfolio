@@ -7,6 +7,7 @@ export interface LinkProps extends PropsWithChildren<any>{
     description?: string,
     link?: string,
     image?: string,
+    className?: string,
 }
 
 const defaultLink:LinkProps = {

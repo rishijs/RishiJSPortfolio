@@ -1,5 +1,5 @@
-import EventCard from "./eventCard";
-import {LinkProps} from "./eventCard"
+import ProjectCard from "./fetchedProjectCard";
+import {LinkProps} from "./fetchedProjectCard"
 import Typography from "@mui/material/Typography";
 
 export default async function OtherSoftware(){
@@ -24,7 +24,7 @@ export default async function OtherSoftware(){
                   const {name, link, image} = item;
                   return (
                     <li key={name} className="bg-black text-black border border solid border-white">
-                      <EventCard name={name} link={link} image={image} className="text-black"/>
+                      <ProjectCard name={name} link={link} image={image} className="text-black"/>
                     </li>
                   );
                 })}

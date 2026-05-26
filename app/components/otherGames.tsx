@@ -1,5 +1,5 @@
-import EventCard from "./eventCard";
-import {LinkProps} from "./eventCard"
+import ProjectCard from "./fetchedProjectCard";
+import {LinkProps} from "./fetchedProjectCard"
 import Typography from "@mui/material/Typography";
 
 export default async function OtherGames(){
@@ -24,7 +24,7 @@ export default async function OtherGames(){
                   const {name, link, image} = item;
                   return (
                     <li key={name} className="bg-black text-black border border solid border-white">
-                      <EventCard name={name} link={link} image={image} className="text-black"/>
+                      <ProjectCard name={name} link={link} image={image} className="text-black"/>
                     </li>
                   );
                 })}
@@ -40,7 +40,7 @@ async function fetchPublicItchGames(): Promise<Array<LinkProps>> {
         headers: {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
         },
-        next: { revalidate: 3600 } 
+        next: { revalidate: 3600 } // Cache for 1 hour
     });
 
     if (!response.ok) {
@@ -53,6 +53,7 @@ async function fetchPublicItchGames(): Promise<Array<LinkProps>> {
     const titleRegex = /<title>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?<\/title>/;
     const linkRegex = /<link>(.*?)<\/link>/;
     const imageRegex = /<description>[\s\S]*?src="(.*?)"/;
+    const descriptionRegex = /<description><!\[CDATA\[(.*?)\]\]><\/description>/;
 
     const matches = Array.from(xmlText.matchAll(itemRegex));
     
