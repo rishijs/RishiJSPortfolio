@@ -17,14 +17,11 @@ export default async function OtherGames(){
         <div>
             <div className="w-full">
               {error && <Typography className="text-red-500 text-center">{error}</Typography>}
-              <ul
-                className="grid grid-cols-3 gap-2"
-              >
+              <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {fetchedGames.map((item: LinkProps) => {
-                  const {name, link, image} = item;
                   return (
-                    <li key={name} className="bg-black text-black border border solid border-white">
-                      <ProjectCard name={name} link={link} image={image} className="text-black"/>
+                    <li key={item.name} className="h-full">
+                      <ProjectCard {...item} />
                     </li>
                   );
                 })}
