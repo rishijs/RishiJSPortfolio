@@ -47,5 +47,6 @@ async function fetchGithubRepos(): Promise<Array<LinkProps>> {
         name: repo.name,
         link: repo.html_url,
         image: "/git.png",
+        description: repo.description,
     }));
 }

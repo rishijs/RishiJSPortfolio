@@ -25,24 +25,20 @@ export default function ProjectDetails(props: ProjectProps) {
     return(
         <Link href={projectPageUrl} legacyBehavior>
         <a
-            className="flex border-2 border-white bg-black gap-8
-            hover:border-red-500 hover:border-4 w-full h-24"
+            className="relative overflow-hidden flex border-2 border-white bg-black gap-8
+            hover:border-red-500 hover:border-4 w-full h-24 group"
         >
-            <div className="flex items-center ml-8">
             <Image
                 src={props.image!}
                 alt="Project"
-                width={48}
-                height={48}
-                className="h-12 w-12 object-scale-down"
+                fill
+                className="object-cover opacity-20 group-hover:opacity-60 transition-opacity duration-300"
             />
-            </div>
-            <div className="flex flex-col justify-center text-white pr-4">
-            <span className="font-bold">{props.name}</span>
-            <span className="text-xs">{props.description!.split("\n").map((line, index) => <span key={index}>{line}<br /></span>)}</span>
+            <div className="relative z-10 flex flex-col justify-center text-white pl-8 pr-4">
+                <span className="font-bold drop-shadow-md">{props.name}</span>
+                <span className="text-xs drop-shadow-md">{props.description!.split("\n").map((line, index) => <span key={index}>{line}<br /></span>)}</span>
             </div>
         </a>
         </Link>
     );
 }
-
