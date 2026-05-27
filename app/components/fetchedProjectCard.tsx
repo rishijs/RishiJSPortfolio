@@ -39,7 +39,7 @@ export default function DataCard(props: LinkProps) {
               {name}
             </Typography>
             {description && (
-              <Typography className="opacity-0 group-hover:opacity-100 text-neutral-100 !text-[10px] text-center line-clamp-2 leading-tight drop-shadow-md transition-opacity duration-300">
+              <Typography className="opacity-0 group-hover:opacity-100 text-neutral-100 !text-[10px] text-center line-clamp-5 leading-tight drop-shadow-md transition-opacity duration-300">
                 {description}
               </Typography>
             )}
