@@ -38,8 +38,9 @@ export default async function Profile() {
         </div>
 
         
-        <h1 className="mb-4">
-            {/*`Full Stack Developer & Jack of All Trades`*/}
+        <h1 className="mb-4 text-center">
+            <br/> 
+            {`Software Engineer @Fedex `}
             <br/> 
             {`B.S. Computer Science Graduate `}
             <a 
@@ -51,7 +52,7 @@ export default async function Profile() {
              @Rutgers New Brunswick
             </a>
             <br/> 
-
+            
         </h1>
 
         <div className="mb-4">

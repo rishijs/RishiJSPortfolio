@@ -47,8 +47,18 @@ body {
 
 /* ... keep your anchor, pre, and code styles exactly the same ... */
 
+.prose pre {
+  background-color: #000 !important;
+  border: 1px solid #262626;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  overflow-x: auto;
+}
+
 .prose p {
-  @apply my-8 text-neutral-600 dark:text-neutral-400 leading-relaxed font-light tracking-wide;
+  @apply my-8 text-neutral-600 dark:text-neutral-300 leading-relaxed font-light tracking-wide;
 }
 
 /* 
