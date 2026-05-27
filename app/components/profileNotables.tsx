@@ -1,4 +1,4 @@
-import { Link, Typography } from "@mui/material";
+import { Link } from "@mui/material";
 import Image from "next/image";
 
 export default async function ProfileNotables() {

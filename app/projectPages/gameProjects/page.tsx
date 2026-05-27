@@ -1,7 +1,5 @@
 import GameProjects from 'app/components/gameProjects'
-import { UpdatePosts } from 'app/components/posts'
 import ProjectList from 'app/components/projectList'
-import Projects from 'app/projects/page'
 
 export const metadata = {
   title: 'Game Other',

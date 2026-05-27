@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from '@mui/material/Button';
-import { PropsWithChildren, useEffect, useState, MouseEvent } from 'react';
+import { PropsWithChildren } from 'react';
 import { Typography } from "@mui/material";
 
 export interface ImageProps extends PropsWithChildren<any>{

@@ -1,6 +1,5 @@
 import SkillCard from "./skillCard";
 import {SkillProps} from "../components/skillCard"
-import Typography from "@mui/material/Typography";
 
 
 const skills: Array<SkillProps> = [

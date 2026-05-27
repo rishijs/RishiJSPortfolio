@@ -1,6 +1,4 @@
-import { UpdatePosts } from 'app/components/posts'
 import ProjectList from 'app/components/projectList'
-import Projects from 'app/projects/page'
 import Image from 'next/image'
 import Link from 'next/link'
 
