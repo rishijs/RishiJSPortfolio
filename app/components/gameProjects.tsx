@@ -56,13 +56,28 @@ async function fetchPublicItchGames(): Promise<Array<LinkProps>> {
     
     return matches.map(match => {
         const content = match[1];
-        const name = content.match(titleRegex)?.[1] || "Unknown Game";
+        const fullTitle = content.match(titleRegex)?.[1] || "Unknown Game";
         const link = content.match(linkRegex)?.[1] || "#";
         const image = content.match(imageRegex)?.[1] || "/itch.png";
         
         const rawDescription = content.match(descriptionRegex)?.[1] || "";
+        
         // Strip HTML tags and clean whitespace for a clean text summary
-        const description = rawDescription.replace(/<[^>]*>?/gm, '').trim();
+        let description = rawDescription.replace(/<[^>]*>?/gm, '').trim();
+
+        // Separate game title from platform/meta tags in brackets
+        const bracketIndex = fullTitle.indexOf('[');
+        let name = fullTitle;
+        let tags = "";
+
+        if (bracketIndex !== -1) {
+            name = fullTitle.substring(0, bracketIndex).trim();
+            tags = fullTitle.substring(bracketIndex).trim();
+        }
+
+        if (tags) {
+            description = description ? `${tags} - ${description}` : tags;
+        }
         
         return { name, link, image, description };
     });
