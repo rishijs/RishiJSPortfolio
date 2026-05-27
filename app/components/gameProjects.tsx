@@ -79,6 +79,6 @@ async function fetchPublicItchGames(): Promise<Array<LinkProps>> {
             description = description ? `${tags} - ${description}` : tags;
         }
         
-        return { name, link, image, description };
+        return { name, link, image, description, hideTitle: true };
     });
 }
