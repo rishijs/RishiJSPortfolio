@@ -10,13 +10,13 @@ export default async function Profile() {
   return (
     <div className="grid gap-2 grid-cols-1">
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-xl md:text-2xl font-semibold tracking-tighter items-center">
-            <div className="flex flex-col items-center md:items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-xl md:text-2xl tracking-tighter items-center">
+            <div className="flex flex-col items-center">
                 <h2 className="mb-2 text-center">
                     {`Rishi Jammalamadaka, rishi.rjsd@gmail.com`}
                 </h2>
                 <Link
-                    href="/resume.pdf"
+                    href={pdfUrl}
                     target="_blank"
                     className="text-center border border-solid border-white bg-foreground h-fit w-48 hover:!bg-red-500 p-2"
                 >

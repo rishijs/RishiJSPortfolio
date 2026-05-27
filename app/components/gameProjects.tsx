@@ -16,7 +16,7 @@ export default async function GameProjects(){
     return(
         <div>
             <div className="w-full">
-              {error && <Typography className="text-red-500 text-center">{error}</Typography>}
+              {error && <Typography variant="inherit" className="text-red-500 text-center">{error}</Typography>}
               <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {fetchedGames.map((item: LinkProps) => {
                   return (
