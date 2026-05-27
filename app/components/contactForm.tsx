@@ -12,6 +12,32 @@ export default function Contact() {
         message: "",
     });
 
+    const inputStyles = {
+        "& .MuiOutlinedInput-notchedOutline": {
+            borderColor: "rgba(255, 255, 255, 0.8)",
+            borderWidth: "2px",
+            transition: "border-color 0.2s ease-in-out",
+        },
+        "&:hover .MuiOutlinedInput-notchedOutline": {
+            borderColor: "#ef4444 !important", // red-500
+        },
+        "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+            borderColor: "#ef4444 !important",
+        },
+        "& input, & textarea": { 
+            color: "white !important", 
+            fontWeight: 500,
+            "&::placeholder": {
+                color: "rgba(255, 255, 255, 0.7)",
+                opacity: 1,
+            },
+        },
+        "& input:-webkit-autofill": {
+            WebkitTextFillColor: "white !important",
+            transition: "background-color 5000s ease-in-out 0s",
+        },
+    };
+
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState<string | null>(null);
@@ -61,11 +87,11 @@ export default function Contact() {
                 autoComplete="off"
                 className="grid grid-cols-1 gap-8 w-full"
             >
-                <div className="grid grid-cols-2 gap-8 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
                     <div className="flex flex-col gap-6">
                         <FormControl fullWidth>
                             <OutlinedInput
-                                className="border border-white"
+                                sx={inputStyles}
                                 placeholder="Full Name"
                                 name="fullname"
                                 value={formData.fullname}
@@ -75,7 +101,7 @@ export default function Contact() {
                         </FormControl>
                         <FormControl fullWidth>
                             <OutlinedInput
-                                className="border border-white"
+                                sx={inputStyles}
                                 placeholder="Email"
                                 type="email"
                                 name="email"
@@ -86,7 +112,7 @@ export default function Contact() {
                         </FormControl>
                         <FormControl fullWidth>
                             <OutlinedInput
-                                className="border border-white"
+                                sx={inputStyles}
                                 placeholder="Subject"
                                 name="subject"
                                 value={formData.subject}
@@ -99,7 +125,7 @@ export default function Contact() {
                     <div>
                         <FormControl fullWidth>
                             <OutlinedInput
-                                className="border border-white w-full"
+                                sx={inputStyles}
                                 placeholder="Message"
                                 name="message"
                                 multiline
@@ -114,7 +140,7 @@ export default function Contact() {
 
                 <Button
                     type="submit"
-                    className="w-full !border-2 !border-solid !border-white !text-white"
+                    className="w-full !border-2 !border-solid !border-white !text-white hover:!bg-red-500 hover:!border-red-500 transition-all duration-300 !py-3 !font-bold"
                     disabled={loading}
                 >
                     {loading ? "Sending..." : "SEND MESSAGE"}

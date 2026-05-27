@@ -10,13 +10,13 @@ export default async function Profile() {
   return (
     <div className="grid gap-2 grid-cols-1">
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-xl md:text-2xl font-semibold tracking-tighter items-center">
-            <div className="flex flex-col items-center md:items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-xl md:text-2xl tracking-tighter items-center">
+            <div className="flex flex-col items-center">
                 <h2 className="mb-2 text-center">
                     {`Rishi Jammalamadaka, rishi.rjsd@gmail.com`}
                 </h2>
                 <Link
-                    href="/resume.pdf"
+                    href={pdfUrl}
                     target="_blank"
                     className="text-center border border-solid border-white bg-foreground h-fit w-48 hover:!bg-red-500 p-2"
                 >
@@ -25,7 +25,11 @@ export default async function Profile() {
             </div>
 
             <div className="flex justify-center">
-                <img src="/creative/knight_still.png" className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full" />
+                <img 
+                src="/creative/knightfall-centered.gif" 
+                className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full object-cover" 
+                alt="Knightfall" 
+                />
             </div>
 
             <div className="h-fit flex justify-center md:justify-start">
@@ -34,8 +38,9 @@ export default async function Profile() {
         </div>
 
         
-        <h1 className="mb-4">
-            {/*`Full Stack Developer & Jack of All Trades`*/}
+        <h1 className="mb-4 text-center">
+            <br/> 
+            {`Software Engineer @Fedex `}
             <br/> 
             {`B.S. Computer Science Graduate `}
             <a 
@@ -47,7 +52,7 @@ export default async function Profile() {
              @Rutgers New Brunswick
             </a>
             <br/> 
-
+            
         </h1>
 
         <div className="mb-4">

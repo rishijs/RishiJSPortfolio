@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
     return(
-        <footer className="flex gap-6 flex-wrap items-center justify-center mb-4">
+        <footer className="flex gap-6 flex-wrap items-center justify-center mb-4 mt-4">
             <Link
             className="text-white! flex items-center gap-2 hover:underline hover:underline-offset-4"
             href="https://linkedin.com/in/rishij02"

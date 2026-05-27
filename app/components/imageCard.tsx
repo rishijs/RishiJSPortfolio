@@ -23,7 +23,7 @@ export default function DataCard(props?: ImageProps) {
             className="grid grid-cols-1 justify-items-center hover:text-black w-full aspect-square
             border-2 border-solid border-white"
             >
-            <Typography className="text-xs md:text-sm lg:text-base  text-center break-words">
+            <Typography variant="inherit" className="text-xs md:text-sm lg:text-base  text-center break-words">
             {props.name}
             </Typography>
 
@@ -36,7 +36,7 @@ export default function DataCard(props?: ImageProps) {
             />
 
             <div className="grid grid-cols-1">
-                <Typography className="hidden lg:flex text-xs md:text-sm lg:text-base text-center break-words">{props.description}</Typography>
+                <Typography variant="inherit" className="hidden lg:flex text-xs md:text-sm lg:text-base text-center break-words">{props.description}</Typography>
             </div>
         </Button>
     );

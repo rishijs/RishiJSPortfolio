@@ -3,70 +3,34 @@ import ProjectCard from "app/components/projectCard";
 
 const projects:Array<ProjectProps> = [
     {
-      name: "Project Manager",
-      description: "A full stack web application made with a Spring Boot back-end with postgreSQL and an Angular front-end",
-      image: "/projectpictures/projectmanager/erd.png",
-      routingUrl: 'projectManager'
+      name: "Liferoot",
+      description: "A procedurally generated 3D puzzle game built for Web and PC platforms. The player's goal is to expand their root system to 'decay' the sandbox environment.",
+      image: "/banner/waves (1).png",
+      routingUrl: 'liferoot'
     },
     {
-      name: "Track Matcher",
-      description: "Front-end focused game modes made using Angular and the Spotify API",
-      image: "/projectpictures/trackmatcher/track_matcher.gif",
-      routingUrl: 'trackMatcher'
+      name: "WIP: Unannounced AWS Project",
+      description: "This project is currently a work in progress. Stay tuned for more details!",
+      image: "/banner/waves (2).png",
+      routingUrl: 'awsProject'
     },
     {
-      name: "Social Media Backend",
-      description: "A back-end focused social media API made with a team of 2 \n Uses JDBC, Spring Boot, and a postgreSQL relational database",
-      image: "/projecticons/spring_social_media.png",
-      routingUrl: 'socialMedia'
-    },
-    {
-      name: "Console Spot",
-      description: "A front-end focused e-commerce website, made with a team of 4 \n Uses JDBC, Apache Tomcat, and a mySQL relational database",
-      image: "/projecticons/console_spot.png",
-      routingUrl: 'consoleSpot'
-    },
-    {
-      name: "threeJET",
-      description: "A gamified 3D portfolio made with three.js",
-      image: "/projecticons/threeJet.png",
-      routingUrl: 'threeJet'
+      name: "WIP: Unannounced Full Stack Project",
+      description: "This project is currently a work in progress. Stay tuned for more details!",
+      image: "/banner/waves (6).png",
+      routingUrl: 'fullstackProject'
     },
     {
       name: "More Software Projects",
-      description: "Other coursework and personal projects worth exploring",
-      image: "/git.png",
-      routingUrl: 'softwareOther'
-    },
-    {
-      name: "Fluxblade",
-      description: "A 2-year long game project in Unreal Engine inspired by Destiny",
-      image: "/projecticons/fluxblade.png",
-      routingUrl: 'fluxblade'
-    },
-    {
-      name: "Spectral War",
-      description: "A 3d RTS game made in Godot with a team of 9 interdisciplinary developers",
-      image: "/projecticons/spectral_war.png",
-      routingUrl: 'spectralWar'
-    },
-    {
-      name: "Skyfall",
-      description: "A 2d action puzzle game made in Godot inspired by tetris \n Worked on multiple large scope updates to enhance UX and gameplay features",
-      image: "/projecticons/skyfall.png",
-      routingUrl: 'skyfall'
-    },
-    {
-      name: "Spiritbane",
-      description: "Collect souls using a weapon that harvests power from them in an action arcade game made in Godot within 9 days",
-      image: "/projecticons/spiritbane.png",
-      routingUrl: 'spiritbane'
+      description: "Software projects and coursework pulled directly from github public repositories",
+      image: "/banner/waves (4).png",
+      routingUrl: 'softwareProjects'
     },
     {
       name: "More Game Development Projects",
-      description: "Other games worth exploring",
-      image: "/itch.png",
-      routingUrl: 'gameOther'
+      description: "Game development projects pulled directly from itch.io, including prototypes, game jam entries, and creative efforts",
+      image: "/banner/waves (7).png",
+      routingUrl: 'gameProjects'
     },
   ];
 

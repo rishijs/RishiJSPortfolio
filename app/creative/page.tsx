@@ -7,13 +7,23 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <section className="mb-4 grid grid-cols gap-4">
-      <h1 className="font-semibold text-2xl tracking-tighter mb-4">Creative Works</h1>
-      <a className="text-sm tracking-tighter mb-4">Aside from software and game development, I sometimes make art and music. Here are some of my best works so far:</a>
-      
-      <Image aria-hidden src="/creative/knightfalls.gif" className="w-full" unoptimized alt="knightfalls" width={256} height={128} />
-      <Image aria-hidden src="/creative/abyss_fly.gif" className="w-full" unoptimized alt="abyss" width={256} height={192} />
+    <section className="flex flex-col gap-8">
+      <div>
+        <h1 className="font-semibold text-3xl tracking-tighter mb-2">Creative Works</h1>
+        <p className="text-sm text-neutral-500 dark:text-neutral-300 tracking-tight">
+          Aside from software and game development, I sometimes make art and music. Here are some of my best works so far:
+        </p>
+      </div>
 
+      <div className="flex flex-col gap-6">
+        <div className="overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900 shadow-sm">
+          <Image aria-hidden src="/creative/knightfalls.gif" className="w-full h-auto" unoptimized alt="knightfalls" width={256} height={128} />
+        </div>
+
+        <div className="overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900 shadow-sm">
+          <Image aria-hidden src="/creative/abyss_fly.gif" className="w-full h-auto" unoptimized alt="abyss" width={256} height={192} />
+        </div>
+      </div>
     </section>
   )
 }

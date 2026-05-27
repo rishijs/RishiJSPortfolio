@@ -18,9 +18,9 @@ export default function DataCard(props?: SkillProps) {
     props = { ...defaultBasic, ...props };
     return(
     <Button
-        className="hover:text-black border-2 border-solid border-white hover:!bg-red-500"
+        className="hover:text-black border-2 border-solid border-white hover:!bg-red-500 !font-[inherit]"
         >
-        <Typography className="!text-xs text-white text-start break-words">{props.name}</Typography>
+        <Typography variant="inherit" className="!text-xs text-white text-start break-words">{props.name}</Typography>
     </Button>
     );
 }

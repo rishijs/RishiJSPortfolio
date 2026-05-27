@@ -1,6 +1,6 @@
 import { UpdatePosts } from 'app/components/posts'
 import Profile from 'app/components/profile'
-import Events from './components/events'
+import Events from './components/gameProjects'
 import Sequence from './components/sequence'
 import { UpdatePostsHighlights } from './components/postHighlights'
 import Github from './components/githubProfile'

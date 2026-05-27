@@ -19,7 +19,7 @@ const timelineItems = [
     },
     {
         date: "2020",
-        description: "Started University @ Rutgers with a computer science focus.",
+        description: "Started University @ Rutgers with a Computer Science focus.",
         cards:[{name: "Data Structures"}, {name: "Computer Science"}, {name: "Java"}],
     },
     {
@@ -37,7 +37,7 @@ const timelineItems = [
               {name: "C"},{name: "Python"},{name: "SQL"},{name: "JDBC"},] ,
     },
     {
-        date: "2023-Present",
+        date: "2023-2026",
         description: "Learned Godot and started to minimized scope of games, with a focus on completing an MVP by a deadline. Partipated in 15+ Game Jams with teams of up to 10 inter-disciplinary members and made a complete game in each.",
         cards:[{name: "Godot"}, {name: "GDScript"}, {name: "OOP"}, {name: "Object Oriented Design"}, {name: "Game Design"}, {name: "Game Development"}],
     },
@@ -47,20 +47,27 @@ const timelineItems = [
         cards:[{name: "Bachelor of Science"}, {name: "Computer Science Major"}],
     },
     {
-        date: "2024-Present",
+        date: "2024-2025",
         description: "Started doing freelance work. Initially started with a platform called Data Annotation. My primary responsibility was querying and correcting LLM model responses for coding tasks.",
         cards:[{name: "Python"}, {name: "Javascript"}, {name: "Artificial Intelligence"}, {name: "LLM"}, {name: "Misc."}],
     },
     {
-        date: "2024-Present",
-        description: "Started work on a professional personal portfolio, but wasn't satisfied with its format until recently in 2025.",
+        date: "2025",
+        description: "Deployed this portfolio website and finalized core features.",
         cards:[{name: "Three.js"}, {name: "Javascript"}, {name: "Typescript"}, {name: "Tailwind"}, {name: "React"}, {name: "Next"}],
     },
     {
-        date: "2025",
-        description: "Got a contracting opportunity, and was taught essential fullstack development skills in a professional environment.",
-        cards:[{name: "Java"}, {name: "Javascript"}, {name: "Spring Boot"}, {name: "Angular"}, {name: "Communication"}],
-    },
+        date: "2025–Present",
+        description: "Software Engineer at FedEx (contracted through Cook Systems). Worked on high-performance backend services, Redis-to-Cassandra migration efforts, and optimized systems handling 100 million+ daily records.",
+        cards: [
+            { name: "Java" },
+            { name: "Spring Boot" },
+            { name: "Cassandra" },
+            { name: "Redis" },
+            { name: "CI/CD" },
+            { name: "Jmeter" }
+        ],
+    }
 ];
 
 
