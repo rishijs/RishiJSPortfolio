@@ -51,22 +51,6 @@ export default function Footer() {
             />
             Itch.io Game Portfolio
             </Link>
-
-            <Link
-            className="text-white!  flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="https://rishijs.github.io"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            <Image
-                aria-hidden
-                src="/git.png"
-                alt="threeJS"
-                width={16}
-                height={16}
-            />
-            threeJET
-            </Link>
         </footer>
     );
 }
