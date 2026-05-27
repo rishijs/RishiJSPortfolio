@@ -1,6 +1,21 @@
 ---
 title: 'RishiJS portfolio revamp'
+publishedAt: '2026-05-27'
 summary: 'Massively reworked this portfolio site'
 ---
 
-Revamped this portfolio site. More details soon!
+## Overview
+A sweeping visual refresh and structural cleanup across 95 files (+715, -654). This rework streamlines project organization, refactors components for reusability, and tightens the global UI.
+
+## Key Changes
+
+- **UI & Typography**: Refined global typography and spacing via `global.css`, `layout.tsx`, and `tailwind.config.js`. Tweaked the profile header to be perfectly centered for visual balance.
+- **Project Consolidation**: Split projects into distinct software and game categories (`softwareProjects.tsx`, `gameProjects.tsx`). Spotlit **Liferoot** as a featured project with new dynamic banners and animated GIF previews.
+- **Component Refactor**: Deprecated legacy event components (`events.tsx`, `eventCard.tsx`) in favor of modular, reusable components (`fetchedProjectCard.tsx`) that handle both static and dynamic data.
+- **Asset Purge**: Dropped heavy, outdated project images to clean up the repo.
+
+## Impact
+
+- **Performance**: Trimming legacy assets and dead code shrinks the overall bundle size.
+- **Maintainability**: Stronger DRY principles and modular components make future iterations faster.
+- **Presentation**: A sharper, modernized aesthetic that puts high-impact projects front and center.
