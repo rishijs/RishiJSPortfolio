@@ -10,7 +10,7 @@ export default function Page() {
     <section className="flex flex-col gap-8">
       <div>
         <h1 className="font-semibold text-3xl tracking-tighter mb-2">Creative Works</h1>
-        <p className="text-sm text-neutral-600 dark:text-neutral-400 tracking-tight">
+        <p className="text-sm text-neutral-500 dark:text-neutral-300 tracking-tight">
           Aside from software and game development, I sometimes make art and music. Here are some of my best works so far:
         </p>
       </div>

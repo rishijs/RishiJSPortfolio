@@ -24,7 +24,18 @@ export default function Contact() {
         "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
             borderColor: "#ef4444 !important",
         },
-        "& input, & textarea": { color: "white", fontWeight: 500 },
+        "& input, & textarea": { 
+            color: "white !important", 
+            fontWeight: 500,
+            "&::placeholder": {
+                color: "rgba(255, 255, 255, 0.7)",
+                opacity: 1,
+            },
+        },
+        "& input:-webkit-autofill": {
+            WebkitTextFillColor: "white !important",
+            transition: "background-color 5000s ease-in-out 0s",
+        },
     };
 
     const [loading, setLoading] = useState(false);

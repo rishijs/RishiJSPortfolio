@@ -15,10 +15,10 @@ export default function Page() {
       {/* Header Section */}
       <div className="flex flex-col gap-2 border-b border-neutral-200 dark:border-neutral-800 pb-4">
         <h1 className="font-bold text-3xl tracking-tighter">Liferoot</h1>
-        <p className="text-sm text-neutral-600 dark:text-neutral-400">
+        <p className="text-sm text-neutral-500 dark:text-neutral-300">
           Developed by Sevadusk, Xandruher, JohnGabrielUK, SpazticSquirrel, & Artosa
         </p>
-        <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-neutral-500 mt-1">
+        <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-neutral-400 mt-1">
           <span>📅 Nov 2025</span>
           <span>🛠️ Godot & GDScript</span>
           <span>⚡ 9-Day Development Cycle</span>
@@ -96,8 +96,8 @@ export default function Page() {
 
       {/* Embedded Video Showcase Card */}
       <div className="flex flex-col gap-2 my-6">
-        <h3 className="text-sm font-medium tracking-tight text-neutral-500 font-mono flex items-center gap-2">
-          <span>🎬</span> Technical Demo & Gameplay Trailer
+        <h3 className="text-sm font-medium tracking-tight text-neutral-300 font-mono flex items-center gap-2">
+          Technical Demo & Gameplay Trailer
         </h3>
         <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-800 bg-black shadow-sm">
           <iframe
@@ -112,7 +112,7 @@ export default function Page() {
           href="https://youtu.be/QfPc2Y72nZw"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs text-neutral-400 dark:text-neutral-500 hover:text-neutral-600 dark:hover:text-neutral-300 hover:underline w-fit transition-colors"
+          className="text-xs text-neutral-300 dark:text-neutral-300 hover:text-neutral-500 dark:hover:text-neutral-200 hover:underline w-fit transition-colors"
         >
           Watch directly on YouTube →
         </a>
@@ -131,7 +131,7 @@ export default function Page() {
             <h3 className="font-medium text-sm text-neutral-900 dark:text-neutral-100 font-mono">
               [01] Object Pooling System
             </h3>
-            <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+            <p className="text-sm text-neutral-500 dark:text-neutral-300 leading-relaxed">
               Implemented a custom object pool pattern in GDScript to manage active entity queues. Bypassed standard runtime instantiation and freeing loops to support <strong>2,500+ concurrently animated 3D objects</strong>, mitigating engine garbage collection spikes and stabilizing frame execution.
             </p>
           </div>
@@ -141,7 +141,7 @@ export default function Page() {
             <h3 className="font-medium text-sm text-neutral-900 dark:text-neutral-100 font-mono">
               [02] Async Thread Synchronization
             </h3>
-            <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+            <p className="text-sm text-neutral-500 dark:text-neutral-300 leading-relaxed">
               Integrated the Talo API platform to handle remote player save states and global leaderboards. Managed data transfer over asynchronous HTTP worker sequences to isolate network execution and prevent network I/O blockages on the primary game simulation thread.
             </p>
           </div>
@@ -151,7 +151,7 @@ export default function Page() {
             <h3 className="font-medium text-sm text-neutral-900 dark:text-neutral-100 font-mono">
               [03] Runtime Grid Modification
             </h3>
-            <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+            <p className="text-sm text-neutral-500 dark:text-neutral-300 leading-relaxed">
               Built data structures to track and mutate structural cell states as root entities expand into the procedural sandbox. Optimised tile update lookups to calculate state changes dynamically without increasing frame budget overhead.
             </p>
           </div>
@@ -161,7 +161,7 @@ export default function Page() {
             <h3 className="font-medium text-sm text-neutral-900 dark:text-neutral-100 font-mono">
               [04] Architecture & Timeline
             </h3>
-            <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+            <p className="text-sm text-neutral-500 dark:text-neutral-300 leading-relaxed">
               Designed a clean separation between core gameplay mechanics and layout render logic across a team of 5. Decoupled code boundaries prevented merge conflicts and enabled feature completion within a <strong>9-day iteration sprint</strong>.
             </p>
           </div>
