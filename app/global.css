@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Merriweather', Charter, 'Bitstream Charter', 'Sitka Text', Cambria, Georgia, serif;
+}
+
+body {
+  font-family: var(--font-sans);
+}
 
 ::selection {
   background-color: #f34747;
-  color: #fefefe;
 }
 
 :root {
@@ -60,11 +70,11 @@
 }
 
 .prose code {
-  @apply px-1 py-0.5 rounded-lg;
+  @apply px-1.5 py-0.5 rounded-md bg-neutral-100 dark:bg-neutral-800 font-mono text-[0.9em];
 }
 
 .prose pre code {
-  @apply p-0;
+  @apply p-0 bg-transparent;
   border: initial;
   line-height: 1.5;
 }
@@ -79,23 +89,23 @@
 }
 
 .prose p {
-  @apply my-4 text-neutral-800 dark:text-neutral-200;
+  @apply my-6 text-neutral-800 dark:text-neutral-300 leading-relaxed;
 }
 
 .prose h1 {
-  @apply text-4xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-4xl font-bold tracking-tight mt-12 mb-6 text-neutral-900 dark:text-neutral-100 font-serif;
 }
 
 .prose h2 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-2xl font-semibold tracking-tight mt-10 mb-4 text-neutral-900 dark:text-neutral-100 font-serif;
 }
 
 .prose h3 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-xl font-semibold tracking-tight mt-8 mb-3 text-neutral-900 dark:text-neutral-100 font-serif;
 }
 
 .prose h4 {
-  @apply text-lg font-medium tracking-tight mt-6 mb-2;
+  @apply text-lg font-semibold tracking-tight mt-6 mb-2 text-neutral-900 dark:text-neutral-100 font-serif;
 }
 
 .prose strong {

@@ -1,7 +1,6 @@
+// @ts-ignore: side-effect import of CSS module (no type declarations)
 import './global.css'
 import type { Metadata } from 'next'
-import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
 import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -39,7 +38,7 @@ export const metadata: Metadata = {
   },
 }
 
-const cx = (...classes) => classes.filter(Boolean).join(' ')
+const cx = (...classes: (string | boolean | undefined | null)[]) => classes.filter(Boolean).join(' ')
 
 export default function RootLayout({
   children,
@@ -50,9 +49,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        'text-black dark:text-white',
-        GeistSans.variable,
-        GeistMono.variable
+        'text-black dark:text-white'
       )}
     >
       <body className="bg-[url('/backgrounds/black_leaf.jpg')] bg-cover bg-center bg-fixed antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
