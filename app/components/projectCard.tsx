@@ -32,7 +32,7 @@ export default function ProjectDetails(props: ProjectProps) {
                 src={props.image!}
                 alt="Project"
                 fill
-                className="object-cover opacity-20 group-hover:opacity-60 transition-opacity duration-300"
+                className="object-cover opacity-90 group-hover:opacity-40 transition-opacity duration-300"
             />
             <div className="relative z-10 flex flex-col justify-center text-white pl-8 pr-4 transition-transform duration-300 group-hover:translate-x-2">
                 <span className="font-bold drop-shadow-md">{props.name}</span>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Events from "app/components/gameProjects";
+import Events from "app/components/otherGames";
 import ProjectList from "app/components/projectList";
 
 export const metadata = {

@@ -5,31 +5,31 @@ const projects:Array<ProjectProps> = [
     {
       name: "Liferoot",
       description: "A procedurally generated 3D puzzle game built for Web and PC platforms. The player's goal is to expand their root system to 'decay' the sandbox environment.",
-      image: "/projectpictures/liferoot/cover.png",
+      image: "/banner/waves (1).png",
       routingUrl: 'liferoot'
     },
     {
       name: "WIP: Unannounced AWS Project",
       description: "This project is currently a work in progress. Stay tuned for more details!",
-      image: "/projectpictures/swe/erd.png",
+      image: "/banner/waves (2).png",
       routingUrl: 'awsProject'
     },
     {
       name: "WIP: Unannounced Full Stack Project",
       description: "This project is currently a work in progress. Stay tuned for more details!",
-      image: "/projectpictures/swe/erd.png",
+      image: "/banner/waves (6).png",
       routingUrl: 'fullstackProject'
     },
     {
       name: "More Software Projects",
       description: "Software projects and coursework pulled directly from github public repositories",
-      image: "/git.png",
+      image: "/banner/waves (4).png",
       routingUrl: 'softwareProjects'
     },
     {
       name: "More Game Development Projects",
       description: "Game development projects pulled directly from itch.io, including prototypes, game jam entries, and creative efforts",
-      image: "/itch.png",
+      image: "/banner/waves (7).png",
       routingUrl: 'gameProjects'
     },
   ];

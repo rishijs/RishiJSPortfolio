@@ -10,11 +10,11 @@ const navItems = {
   '/update': {
     name: 'updates',
   },
-  '/contact': {
-    name: 'contact',
-  },
   '/creative': {
     name: 'creative',
+  },
+  '/contact': {
+    name: 'contact',
   },
 }
 
