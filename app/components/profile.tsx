@@ -25,7 +25,11 @@ export default async function Profile() {
             </div>
 
             <div className="flex justify-center">
-                <img src="/creative/knight_still.png" className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full" />
+                <img 
+                src="/creative/knightfall-centered.gif" 
+                className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full object-cover" 
+                alt="Knightfall" 
+                />
             </div>
 
             <div className="h-fit flex justify-center md:justify-start">
