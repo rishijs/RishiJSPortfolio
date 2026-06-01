@@ -17,9 +17,9 @@ export default function Page() {
           Developed by Sevadusk, Xandruher, JohnGabrielUK, SpazticSquirrel, & Artosa
         </p>
         <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-neutral-400 mt-1">
-          <span>📅 Nov 2025</span>
-          <span>🛠️ Godot & GDScript</span>
-          <span>⚡ 9-Day Development Cycle</span>
+          <span>Nov 2025</span>
+          <span>Godot & GDScript</span>
+          <span>9-Day Development - Game Jam</span>
         </div>
       </div>
 
