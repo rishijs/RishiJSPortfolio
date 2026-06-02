@@ -130,27 +130,27 @@ export default function Page() {
               [01] Object Pooling System
             </h3>
             <p className="text-sm text-neutral-500 dark:text-neutral-300 leading-relaxed">
-              Implemented a custom object pooling pattern in GDScript to manage active entity queues. Bypassed standard runtime instantiation and freeing loops to support <strong>2,500+ concurrently animated 3D objects</strong>, mitigating engine garbage collection spikes and stabilizing frames per second.
+              Implemented a custom object pool pattern in GDScript to manage active entity queues. Bypassed standard runtime instantiation and freeing loops to support <strong>2,500+ concurrently animated 3D objects</strong>, mitigating engine garbage collection spikes and stabilizing frame execution.
             </p>
           </div>
 
           {/* Leaderboard Integration */}
           <div className="space-y-1">
             <h3 className="font-medium text-sm text-neutral-900 dark:text-neutral-100 font-mono">
-              [02] Leaderboard API
+              [02] Runtime Grid Modification
             </h3>
             <p className="text-sm text-neutral-500 dark:text-neutral-300 leading-relaxed">
-              Integrated the Talo API platform to handle remote player save states and global leaderboards. Used API calls to properly fetch and update player scores.
+              Built data structures to track and update tile cell states as root entities expand, using object oriented programming principles. Optimized tile update lookups to calculate state changes dynamically without increasing frame budget overhead.
             </p>
           </div>
 
           {/* Procedural Grid Mutability */}
           <div className="space-y-1">
             <h3 className="font-medium text-sm text-neutral-900 dark:text-neutral-100 font-mono">
-              [03] Runtime Grid Modification
+              [03] Leaderboard API
             </h3>
             <p className="text-sm text-neutral-500 dark:text-neutral-300 leading-relaxed">
-              Built data structures to track and update tile cell states as root entities expand, using object oriented programming principles. Optimised tile update lookups to calculate state changes dynamically without increasing frame budget overhead.
+              Integrated the Talo API platform to handle remote player save states and global leaderboards. Used API calls to properly fetch and update player scores.
             </p>
           </div>
 
