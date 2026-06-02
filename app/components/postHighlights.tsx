@@ -9,7 +9,7 @@ export function UpdatePostsHighlights() {
   )
   const priorityPosts = sortedByDate.filter((post) => post.metadata.priority?.toLowerCase() === 'true')
   const otherPosts = sortedByDate.filter((post) => post.metadata.priority?.toLowerCase() !== 'true' && post.metadata.priority?.toLowerCase() !== 'avoid')
-  const highlightedPosts = [...priorityPosts, ...otherPosts].slice(0, 3)
+  const highlightedPosts = [...priorityPosts, ...otherPosts].slice(0, 4)
 
   return (
     <div className="bg-black text-white p-6 rounded-xl border border-neutral-800 shadow-sm max-h-[500px] overflow-y-auto">
