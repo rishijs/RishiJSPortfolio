@@ -1,0 +1,54 @@
+---
+title: 'Intro to Resilience4j Bulkhead'
+publishedAt: '2026-06-01'
+summary: 'Overview of a Springboot library to manage async functionality'
+---
+
+## Overview
+
+Bulkheads are a resiliency pattern used to isolate failures and prevent overloaded components from affecting the rest of an application.
+
+Resilience4j provides bulkhead implementations that integrate with Spring Boot applications to control concurrency and protect downstream services from resource exhaustion.
+
+This post covers the basics of the bulkhead pattern and how Resilience4j implements it.
+
+## Understanding Bulkheads
+
+Bulkheads limit how many requests or operations can execute simultaneously.
+
+Core concepts:
+
+* `Isolation` – Prevent failures in one component from impacting others.
+* `Concurrency Limits` – Restrict the number of parallel executions.
+* `Resource Protection` – Avoid thread pool exhaustion and cascading failures.
+* `Fallback Support` – Return alternative responses when limits are reached.
+
+Resilience4j provides two primary bulkhead types:
+
+* `Semaphore Bulkhead` – Limits concurrent executions using semaphores.
+* `Thread Pool Bulkhead` – Uses dedicated thread pools for task isolation.
+
+## Basic Workflow
+
+Typical implementation flow:
+
+1. Add Resilience4j dependencies
+2. Configure bulkhead settings
+3. Apply annotations or decorators
+4. Define fallback behavior
+5. Monitor rejected or queued requests
+
+## Main Benefits
+
+* `Failure Isolation`: Reduce cascading failures.
+* `Concurrency Control`: Prevent overloaded dependencies.
+* `Thread Protection`: Avoid resource starvation.
+* `Spring Boot Integration`: Simple configuration and annotations.
+* `Scalability`: Control service behavior under load.
+
+## When To Use Bulkheads
+
+* Protect slow downstream services.
+* Limit concurrent API calls.
+* Isolate expensive async operations.
+* Prevent resource exhaustion during traffic spikes.

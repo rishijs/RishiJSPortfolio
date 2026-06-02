@@ -4,8 +4,10 @@ import path from 'path'
 type Metadata = {
   title: string
   publishedAt: string
+  updatedAt?: string
   summary: string
   image?: string
+  priority?: string
 }
 
 function parseFrontmatter(fileContent: string) {

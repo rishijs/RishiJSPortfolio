@@ -1,0 +1,49 @@
+---
+title: 'Spring Lifecycle Tooling'
+publishedAt: '2026-06-01'
+summary: 'High level talk about Spring concepts I used'
+priority: avoid
+---
+
+## Overview
+
+Working with Spring microservices required understanding JVM behavior, memory management, authentication patterns, and operational tooling used to support production services.
+
+This post covers some concepts and tooling I worked with while building and maintaining Spring applications.
+
+## JVM Runtime Considerations
+
+Areas I worked with included:
+
+* `Heap Management` – Monitoring memory allocation and consumption.
+* `Thread Management` – Managing concurrency and thread pool behavior.
+* `JVM Tuning` – Configuring runtime parameters for performance optimization.
+* `Resource Usage` – Tracking CPU and memory utilization across services.
+
+## Garbage Collection
+
+JVM concepts I encountered while monitoring and troubleshooting services:
+
+* `Young Generation` – Observing allocation patterns for short-lived objects.
+* `Old Generation` – Monitoring retention of long-lived objects.
+* `New Ratio` – Controls the ratio between Young and Old Gen.
+* `Garbage Collector Type` - Switch between serial and parallel to maximize throughput.
+* `GC Pauses` – Investigating latency introduced by collection cycles.
+* `Memory Metrics` – Analyzing heap usage and allocation behavior.
+
+## Authentication and Spring
+
+Production integrations included:
+
+* `Spring Boot` for microservice development
+* `Okta` for JWT authentication and authorization
+* `Health Checks` for service readiness and monitoring
+
+## DevOps Tooling
+
+Operational tooling used around Spring services:
+
+* `Splunk` – Log aggregation and troubleshooting.
+* `AppDynamics` – Performance monitoring and JVM metrics.
+* `Information Points` – Runtime instrumentation and debugging.
+* `Jenkins` – CI/CD automation and deployment workflows.

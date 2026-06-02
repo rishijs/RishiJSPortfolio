@@ -11,8 +11,9 @@ export async function generateStaticParams() {
   }))
 }
 
-export function generateMetadata({ params }) {
-  let post = getUpdatePosts().find((post) => post.slug === params.slug)
+export async function generateMetadata({ params }) {
+  const { slug } = await params
+  let post = getUpdatePosts().find((post) => post.slug === slug)
   if (!post) {
     return{
       
@@ -23,6 +24,8 @@ export function generateMetadata({ params }) {
     title,
     publishedAt: publishedTime,
     summary: description,
+    priority: isPriority,
+    updatedAt: updatedTime,
     image,
   } = post.metadata
   let ogImage = image
@@ -37,6 +40,8 @@ export function generateMetadata({ params }) {
       description,
       type: 'article',
       publishedTime,
+      updatedTime,
+      isPriority,
       url: `${baseUrl}/update/${post.slug}`,
       images: [
         {
@@ -53,8 +58,10 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function Update({ params }) {
-  let post = getUpdatePosts().find((post) => post.slug === params.slug)
+export default async function Update({ params }) {
+
+  let {slug} = await params
+  let post = getUpdatePosts().find((post) => post.slug === slug)
 
   if (!post) {
     notFound()
@@ -71,7 +78,7 @@ export default function Update({ params }) {
             '@type': 'UpdatePosting',
             headline: post.metadata.title,
             datePublished: post.metadata.publishedAt,
-            dateModified: post.metadata.publishedAt,
+            dateModified: post.metadata.updatedAt,
             description: post.metadata.summary,
             image: post.metadata.image
               ? `${baseUrl}${post.metadata.image}`
@@ -88,13 +95,27 @@ export default function Update({ params }) {
         {post.metadata.title}
       </h1>
       <div className="flex justify-between items-center mt-2 mb-8 text-sm">
-        <p className="text-sm text-neutral-600 dark:text-neutral-400">
-          {formatDate(post.metadata.publishedAt)}
-        </p>
+        <div className="flex flex-col">
+          <p className="text-sm text-neutral-600 dark:text-neutral-300">
+            {formatDate(post.metadata.publishedAt)}
+          </p>
+          {post.metadata.updatedAt && (
+            <p className="text-xs text-neutral-400 italic">
+              Updated: {formatDate(post.metadata.updatedAt)}
+            </p>
+          )}
+          {post.metadata.priority?.toLowerCase() === 'true' && (
+            <p className="text-xs text-red-500 italic">
+              Priority Post
+            </p>
+          )}
+        </div>
       </div>
-      <article className="prose">
-        <CustomMDX source={post.content} />
-      </article>
+      <div className="bg-black text-white p-6 rounded-lg border border-neutral-800 shadow-sm">
+        <article className="prose">
+          <CustomMDX source={post.content} />
+        </article>
+      </div>
     </section>
   )
 }
