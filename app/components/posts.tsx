@@ -26,7 +26,7 @@ export function UpdatePosts() {
                   {post.metadata.title}
                 </h2>
                 {post.metadata.priority?.toLowerCase() === 'true' && (
-                  <span className="text-red-500 text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span className="text-red-500 text-xs font-semibold transition-opacity">
                     PRIORITY
                   </span>
                 )}
