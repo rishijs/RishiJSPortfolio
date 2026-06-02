@@ -1,0 +1,62 @@
+---
+title: 'Schema Denormalization in Cassandra'
+publishedAt: '2026-06-01'
+summary: 'About a possible schema optimization technique'
+priority: true
+---
+
+## Overview
+
+Cassandra schemas are typically designed around query patterns rather than normalization.
+
+One optimization technique is denormalization: duplicating data to reduce query count and simplify reads.
+
+## Example: Using a JSON Column in Multiple Tables
+
+Suppose user profile data is required across multiple query paths.
+
+Instead of:
+
+* Query user profile table
+* Query related entity table
+* Merge responses in application code
+
+Embed frequently accessed fields into a JSON column.
+
+```
+CREATE TABLE user_profile (
+    user_id TEXT PRIMARY KEY,
+    payload_json TEXT
+);
+CREATE TABLE user_activity (
+    user_id TEXT,
+    activity_id UUID,
+    created_at TIMESTAMP,
+    payload_json TEXT,
+    PRIMARY KEY ((user_id), created_at, activity_id)
+);
+```
+
+The same payload_json field exists in both tables.
+Instead of querying `user_profile` each time payload_json was required, we just add it to `user_activity`
+
+## Benefits
+
+* `Lower Query Count` – Fewer database lookups.
+* `Faster Reads` – Reduce round trips.
+* `Simpler Retrieval Logic` – Less application-side aggregation.
+* `Query-Oriented Design` – Align storage with access patterns.
+
+## Tradeoffs
+
+* `Duplicate Data` – Updates occur in multiple places.
+* `Higher Storage Usage` – JSON increases row size.
+* `Write Complexity` – More expensive updates.
+* `Consistency Overhead` – Multiple copies must stay synchronized.
+
+## When To Use It
+
+* Read-heavy workloads.
+* Stable access patterns.
+* Expensive multi-query retrieval flows.
+* Cases where read performance is prioritized over storage efficiency.

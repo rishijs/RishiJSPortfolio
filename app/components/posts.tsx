@@ -3,18 +3,17 @@ import { formatDate, getUpdatePosts } from 'app/update/utils'
 
 export function UpdatePosts() {
   let allUpdates = getUpdatePosts()
+  
+  const sortedByDate = allUpdates.sort((a, b) => 
+    new Date(b.metadata.publishedAt).getTime() - new Date(a.metadata.publishedAt).getTime()
+  )
+  const priorityPosts = sortedByDate.filter((post) => post.metadata.priority?.toLowerCase() === 'true')
+  const otherPosts = sortedByDate.filter((post) => post.metadata.priority?.toLowerCase() !== 'true')
+  const orderedPosts = [...priorityPosts, ...otherPosts]
 
   return (
     <div className="flex flex-col">
-      {allUpdates
-        .sort((a, b) => {
-          if (
-            new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
-          ) {
-            return -1
-          }
-          return 1
-        })
+      {orderedPosts 
         .map((post) => (
           <Link
             key={post.slug}
@@ -30,6 +29,11 @@ export function UpdatePosts() {
                   {formatDate(post.metadata.publishedAt)}
                 </p>
               </div>
+              {post.metadata.summary && (
+                  <p className="text-xs text-neutral-400 mt-1 hidden group-hover:block line-clamp-2">
+                    {post.metadata.summary}
+                  </p>
+              )}
             </div>
           </Link>
         ))}

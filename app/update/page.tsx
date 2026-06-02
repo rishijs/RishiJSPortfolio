@@ -14,7 +14,9 @@ export default function Page() {
           Milestones, progress reports, and deep dives into my recent technical projects and creative works.
         </p>
       </div>
-      <UpdatePosts />
+      <div className="bg-black text-white p-6 rounded-xl border border-neutral-800 shadow-sm max-h-[400px] overflow-y-auto">
+        <UpdatePosts />
+      </div>
     </section>
   )
 }

@@ -17,9 +17,9 @@ export default function Page() {
           Developed by Sevadusk, Xandruher, JohnGabrielUK, SpazticSquirrel, & Artosa
         </p>
         <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-neutral-400 mt-1">
-          <span>📅 Nov 2025</span>
-          <span>🛠️ Godot & GDScript</span>
-          <span>⚡ 9-Day Development Cycle</span>
+          <span>Nov 2025</span>
+          <span>Godot & GDScript</span>
+          <span>9-Day Development - Game Jam</span>
         </div>
       </div>
 
@@ -137,30 +137,30 @@ export default function Page() {
           {/* Leaderboard Integration */}
           <div className="space-y-1">
             <h3 className="font-medium text-sm text-neutral-900 dark:text-neutral-100 font-mono">
-              [02] Async Thread Synchronization
+              [02] Runtime Grid Modification
             </h3>
             <p className="text-sm text-neutral-500 dark:text-neutral-300 leading-relaxed">
-              Integrated the Talo API platform to handle remote player save states and global leaderboards. Managed data transfer over asynchronous HTTP worker sequences to isolate network execution and prevent network I/O blockages on the primary game simulation thread.
+              Built data structures to track and update tile cell states as root entities expand, using object oriented programming principles. Optimized tile update lookups to calculate state changes dynamically without increasing frame budget overhead.
             </p>
           </div>
 
           {/* Procedural Grid Mutability */}
           <div className="space-y-1">
             <h3 className="font-medium text-sm text-neutral-900 dark:text-neutral-100 font-mono">
-              [03] Runtime Grid Modification
+              [03] Leaderboard API
             </h3>
             <p className="text-sm text-neutral-500 dark:text-neutral-300 leading-relaxed">
-              Built data structures to track and mutate structural cell states as root entities expand into the procedural sandbox. Optimised tile update lookups to calculate state changes dynamically without increasing frame budget overhead.
+              Integrated the Talo API platform to handle remote player save states and global leaderboards. Used API calls to properly fetch and update player scores.
             </p>
           </div>
 
           {/* Project Lifecycle */}
           <div className="space-y-1">
             <h3 className="font-medium text-sm text-neutral-900 dark:text-neutral-100 font-mono">
-              [04] Architecture & Timeline
+              [04] Timeline & Version Control
             </h3>
             <p className="text-sm text-neutral-500 dark:text-neutral-300 leading-relaxed">
-              Designed a clean separation between core gameplay mechanics and layout render logic across a team of 5. Decoupled code boundaries prevented merge conflicts and enabled feature completion within a <strong>9-day iteration sprint</strong>.
+              Used Github with a team of 5. Prevented merge conflicts and enabled completion of core features within <strong>9-days</strong>.
             </p>
           </div>
 

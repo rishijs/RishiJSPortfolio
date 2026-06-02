@@ -48,7 +48,7 @@ body {
 /* ... keep your anchor, pre, and code styles exactly the same ... */
 
 .prose pre {
-  background-color: #000 !important;
+  background-color: #121212 !important;
   border: 1px solid #262626;
   border-radius: 8px;
   padding: 12px;

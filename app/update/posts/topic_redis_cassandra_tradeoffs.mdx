@@ -1,0 +1,49 @@
+---
+title: 'Redis - Cassandra Tradeoffs'  
+publishedAt: '2026-06-01'
+summary: 'High level talk about Redis and Cassandra'
+priority: avoid
+---
+
+## Overview
+
+Redis and Cassandra are both commonly used in distributed systems but solve different problems.
+
+Redis is optimized for low-latency, in-memory workloads such as caching and fast lookups. Cassandra is designed for horizontally scalable, distributed storage across many nodes.
+
+This post covers the high-level tradeoffs between them.
+
+## Understanding Redis and Cassandra
+
+Core differences:
+
+* `Redis` – In-memory key-value database optimized for speed.
+* `Cassandra` – Distributed NoSQL database optimized for scale and availability.
+* `Storage` – Redis stores primarily in memory; Cassandra persists data to disk.
+* `Scaling` – Cassandra is designed for horizontal scaling by default.
+* `Consistency` – Cassandra provides tunable consistency models across clusters.
+
+## Comparison Areas
+
+Typical evaluation criteria:
+
+1. Read/write volume
+2. Latency requirements
+3. Dataset size
+4. Scaling requirements
+5. Availability requirements
+6. Consistency needs
+
+## Main Tradeoffs
+
+* `Redis Performance`: Extremely low latency and high throughput.
+* `Cassandra Scalability`: Handles large datasets across distributed clusters.
+* `Redis Cost`: Memory-heavy workloads can become expensive at scale.
+* `Cassandra Complexity`: More operational overhead due to distributed architecture.
+* `Use Cases`: Redis for caching, sessions, queues; Cassandra for large-scale storage and time-series workloads.
+
+## When To Use Each
+
+* Use Redis for caching and fast-access workloads.
+* Use Cassandra for distributed storage and high availability.
+* Use both together when caching and durable storage are both required.

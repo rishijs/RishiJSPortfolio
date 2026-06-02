@@ -1,7 +1,9 @@
 ---
-title: 'RishiJS portfolio revamp'
+title: 'Portfolio Revamp v2.0'
 publishedAt: '2026-05-27'
-summary: 'Massively reworked this portfolio site'
+updatedAt: '2026-06-01'
+summary: 'The one about projects and update posts'
+priority: true
 ---
 
 ## Overview
@@ -9,13 +11,16 @@ A sweeping visual refresh and structural cleanup across 95 files (+715, -654). T
 
 ## Key Changes
 
-- **UI & Typography**: Refined global typography and spacing via `global.css`, `layout.tsx`, and `tailwind.config.js`. Tweaked the profile header to be perfectly centered for visual balance.
-- **Project Consolidation**: Split projects into distinct software and game categories (`softwareProjects.tsx`, `gameProjects.tsx`). Spotlit **Liferoot** as a featured project with new dynamic banners and animated GIF previews.
-- **Component Refactor**: Deprecated legacy event components (`events.tsx`, `eventCard.tsx`) in favor of modular, reusable components (`fetchedProjectCard.tsx`) that handle both static and dynamic data.
-- **Asset Purge**: Dropped heavy, outdated project images to clean up the repo.
+- `UI & Typography`: Refined global typography and spacing via `global.css`, `layout.tsx`, and `tailwind.config.js`. Tweaked the profile header to be perfectly centered for visual balance.
+- `Project Consolidation`: Split projects into distinct software and game categories (`softwareProjects.tsx`, `gameProjects.tsx`). Spotlit **Liferoot** as a featured project with new dynamic banners and animated GIF previews.
+- `Component Refactor`: Deprecated legacy event components (`events.tsx`, `eventCard.tsx`) in favor of modular, reusable components (`fetchedProjectCard.tsx`) that handle both static and dynamic data.
+- `Asset Purge`: Dropped heavy, outdated project images to clean up the repo.
+- `Post Formatting and Priority`: Added a variable to allow for sorting by priority/non priority posts. Filling in the rest with the posts with the latest timestamp.
+
 
 ## Impact
 
-- **Performance**: Trimming legacy assets and dead code shrinks the overall bundle size.
-- **Maintainability**: Stronger DRY principles and modular components make future iterations faster.
-- **Presentation**: A sharper, modernized aesthetic that puts high-impact projects front and center.
+- `Performance`: Trimming legacy assets and dead code shrinks the overall bundle size.
+- `Maintainability`: Stronger DRY principles and modular components make future iterations faster.
+- `Presentation`: A sharper, modernized aesthetic that puts high-impact projects front and center.
+- `Discoverability`: Enhanced post priority, formatting, included descriptions to help update posts stand out.

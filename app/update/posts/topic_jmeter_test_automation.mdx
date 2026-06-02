@@ -1,0 +1,52 @@
+---
+title: 'JMeter Test Automation Basics'
+publishedAt: '2026-06-01'
+summary: 'Intro to test flows in Jmeter (Open Source Testing Tool Similar to Postman)'
+priority: avoid
+---
+
+## Overview
+
+When getting started with API testing and performance testing, many developers immediately think of tools like Postman. But for automated test flows, load testing, and scalable performance validation, **Apache JMeter** offers a much broader toolkit.
+
+JMeter is an open-source testing platform designed to simulate user behavior, automate request flows, and measure how systems perform under load. Whether you're testing REST APIs, validating backend performance, or creating repeatable test scenarios, JMeter provides a flexible way to build and run automated tests.
+
+In this post, I'll give a brief overview of what Jmeter helps with.
+
+
+## Understanding JMeter Test Flows
+
+A JMeter test plan is built using multiple layers of components that work together to simulate user interactions.
+
+Some core building blocks include:
+
+* `Thread Groups` – Define how many users you want to simulate and how often requests should run.
+* `Samplers` – Represent the actual requests being executed, such as HTTP API calls.
+* `Config Elements` – Store reusable values like base URLs, headers, or authentication settings.
+* `Assertions` – Validate responses to confirm your application behaves as expected.
+* `Listeners` – Display results, response times, and performance metrics.
+
+These pieces combine to create structured, reusable test scenarios that can scale from simple API validation to large-scale load tests.
+
+
+## Basic Testing Workflow
+
+A basic API workflow in JMeter often follows this pattern:
+
+1. Create a Test Plan / User Defined Variables
+2. Add a Thread Group
+3. Configure HTTP Request Defaults
+4. Add API requests using HTTP Samplers
+5. Add assertions to validate responses
+6. Run the test and inspect results
+
+This structure makes it possible to automate repetitive testing tasks while keeping test flows organized and maintainable.
+
+
+## Main Benefits:
+
+* `Test Fragments`: Build components that perform repeatable functionality, for ease of use in testcases/flows
+* `Automation`: Build reusable test flows for repeated execution.
+* `Performance Testing`: Simulate concurrent users and measure system limits.
+* `Scalability`: Handle complex workflows with variables, loops, and controllers.
+* `Open Source`: Free and widely supported by the testing community.
