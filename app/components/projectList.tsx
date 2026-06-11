@@ -10,13 +10,13 @@ const projects:Array<ProjectProps> = [
     },
     {
       name: "WIP: Unannounced AWS Project",
-      description: "This project is currently a work in progress. Stay tuned for more details!",
+      description: "This project is currently still being planned. See AWS Sandbox as a learning space fo now.",
       image: "/banner/waves (2).png",
       routingUrl: 'awsProject'
     },
     {
       name: "WIP: Unannounced Full Stack Project",
-      description: "This project is currently a work in progress. Stay tuned for more details!",
+      description: "This project is currently a work in progress. Stay tuned for more details",
       image: "/banner/waves (6).png",
       routingUrl: 'fullstackProject'
     },

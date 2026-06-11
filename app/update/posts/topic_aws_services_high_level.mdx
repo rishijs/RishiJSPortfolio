@@ -1,0 +1,51 @@
+---
+title: 'AWS Services and Alternative Architectures'
+publishedAt: '2026-06-10'
+summary: 'A high-level look at AWS services and how they compare to traditional enterprise architectures'
+---
+
+## Overview
+
+I've been exploring AWS recently and noticed many similarities between traditional Spring Boot enterprise environments and the managed services AWS provides.
+
+One takeaway so far is that AWS consolidates many capabilities that would traditionally require multiple vendors and platforms.
+
+## Key Distinctions
+
+**Monitoring & Observability**
+
+`AppDynamics / Splunk` → AWS monitoring services
+
+AWS provides centralized logging, metrics, dashboards, and alerting through services such as CloudWatch, reducing the need for separate monitoring platforms.
+
+**Databases**
+
+`Redis / Cassandra / Oracle` → AWS managed databases
+
+AWS offers managed database services that remove much of the operational overhead associated with hosting and maintaining database infrastructure.
+
+**Application Hosting**
+
+`Deploying applications to Unix servers via CI/CD` → AWS compute services
+
+Applications can be deployed to EC2 instances, while S3 stores application assets and files. Lambda can execute event-driven code without provisioning servers, providing an alternative to traditional application hosting models.
+
+## AWS Lambda
+
+Runs code in response to events without managing servers. AWS handles scaling and infrastructure management automatically.
+
+## Amazon S3
+
+Object storage for files, static assets, backups, and application data.
+
+## Amazon DynamoDB
+
+A fully managed NoSQL database designed for high availability, low latency, and automatic scaling.
+
+## Amazon EC2
+
+Virtual machines in the cloud that provide full control over the operating system and runtime environment.
+
+## Amazon Bedrock
+
+A managed service for building AI applications using foundation models from multiple providers through a unified API, without managing the underlying model infrastructure.

@@ -3,6 +3,8 @@ import { Resend } from 'resend';
 import { EmailTemplate } from 'app/components/emailTemplate';
 
 const resend = new Resend(process.env.RESEND_API_KEY!);
+const email_recipient = process.env.EMAIL_RECIPIENT!;
+
 
 export async function POST(req: Request) {
   try {
@@ -10,7 +12,7 @@ export async function POST(req: Request) {
 
     const { data, error } = await resend.emails.send({
       from: `${fullname} <onboarding@resend.dev>`,
-      to: ['rishijs2002@gmail.com'],
+      to: [email_recipient],
       subject: subject+'-'+Date.now(),
       react: EmailTemplate({ fullname: fullname, message: message, email: email }) as React.ReactElement,
     });
