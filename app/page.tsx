@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <section className="grid grid-cols-1 gap-4">
+    <section className="grid grid-cols-1 gap-4 items-center justify-center">
       <Profile/>
       <UpdatePostsHighlights />
       <Sequence/>

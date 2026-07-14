@@ -52,7 +52,7 @@ export default function RootLayout({
         'text-black dark:text-white'
       )}
     >
-      <body className="bg-[url('/backgrounds/dark_adobe_4.jpeg')] bg-cover bg-center bg-fixed antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
+      <body className="bg-[url('/backgrounds/dark_adobe_4.jpeg')] bg-cover bg-center bg-fixed antialiased max-w-2xl mx-4 mt-8 md:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}

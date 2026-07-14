@@ -9,50 +9,60 @@ export default async function Profile() {
   return (
     <div className="grid gap-2 grid-cols-1">
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-xl md:text-2xl tracking-tighter items-center">
-            <div className="flex flex-col items-center">
-                <h2 className="mb-2 text-center">
-                    {`Rishi Jammalamadaka, rishi.rjsd@gmail.com`}
-                </h2>
-                <Link
-                    href={pdfUrl}
-                    target="_blank"
-                    className="text-center border border-solid border-white bg-foreground h-fit w-48 hover:!bg-red-500 p-2"
-                >
-                    View Resume
-                </Link>
+        <div className="bg-neutral-900/50 md:bg-transparent rounded-xl md:rounded-none p-8 md:p-0 border md:border-none border-neutral-800 flex flex-col items-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-xl md:text-2xl tracking-tighter items-center">
+                <div className="flex flex-col items-center">
+                    <h2 className="mb-2 text-center">
+                        {`Rishi Jammalamadaka, rishi.rjsd@gmail.com`}
+                    </h2>
+                    <div className="flex items-center gap-4">
+                        <img 
+                            src="/creative/knightfall-centered.gif" 
+                            className="w-24 h-24 rounded-full object-cover md:hidden" 
+                            alt="Knightfall" 
+                        />
+                        <Link
+                            href={pdfUrl}
+                            target="_blank"
+                            className="text-center border border-solid border-white bg-foreground h-fit w-48 hover:!bg-red-500 p-2"
+                        >
+                            View Resume
+                        </Link>
+                    </div>
+                </div>
+
+                <div className="hidden md:flex justify-center lg:ml-8 md:ml-8">
+                    <img 
+                    src="/creative/knightfall-centered.gif" 
+                    className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full object-cover" 
+                    alt="Knightfall" 
+                    />
+                </div>
+
+                <div className="h-fit flex justify-center">
+                    <ProfileNotables />
+                </div>
             </div>
 
-            <div className="flex justify-center">
-                <img 
-                src="/creative/knightfall-centered.gif" 
-                className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full object-cover" 
-                alt="Knightfall" 
-                />
-            </div>
-
-            <div className="h-fit flex justify-center md:justify-start">
-                <ProfileNotables />
-            </div>
-        </div>
-
-        
-        <h1 className="mb-4 text-center">
-            <br/> 
-            {`Software Engineer @Fedex `}
-            <br/> 
-            {`B.S. Computer Science Graduate `}
-            <a 
-                href="https://newbrunswick.rutgers.edu/?utm_source=rutgers.edu&utm_medium=web&utm_campaign=uwide_sliver_new" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:underline"
-            >
-             @Rutgers New Brunswick
-            </a>
-            <br/> 
             
-        </h1>
+            <h1 className="mb-4 text-center">
+                <br/> 
+                {`Software Engineer`}
+                <br/> 
+                {`B.S. Computer Science Graduate `}
+                <br/>
+                <a 
+                    href="https://newbrunswick.rutgers.edu/?utm_source=rutgers.edu&utm_medium=web&utm_campaign=uwide_sliver_new" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline"
+                >
+                @Rutgers New Brunswick
+                </a>
+                <br/> 
+                
+            </h1>
+        </div>
 
         <div className="mb-4">
             <GithubProfile/>

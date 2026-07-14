@@ -21,13 +21,13 @@ export function UpdatePostsHighlights() {
               href={`/update/${post.slug}`}
             >
               <div className="group flex flex-col w-full border-b border-neutral-200 dark:border-neutral-800 py-2 transition-all hover:border-red-500 last:border-0">
-                <div className="flex items-center justify-between w-full flex-wrap gap-2">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between w-full gap-1 md:gap-2">
                   <div className="flex items-center gap-2">
                     <h2 className="title font-bold text-lg tracking-tighter group-hover:text-red-500 transition-colors">
                       {post.metadata.title}
                     </h2>
                     {post.metadata.priority?.toLowerCase() === 'true' && (
-                      <span className="text-red-500 text-xs font-semibold transition-opacity">
+                      <span className="text-neutral-400 text-xs font-semibold transition-opacity">
                         PRIORITY
                       </span>
                     )}
