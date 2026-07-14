@@ -105,7 +105,7 @@ export default async function Update({ params }) {
             </p>
           )}
           {post.metadata.priority?.toLowerCase() === 'true' && (
-            <p className="text-xs text-red-500 italic">
+            <p className="text-xs text-neutral-400 italic">
               Priority Post
             </p>
           )}

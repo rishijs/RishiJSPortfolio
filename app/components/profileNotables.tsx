@@ -15,7 +15,7 @@ export default async function ProfileNotables() {
     }
 
     return (
-        <div className="grid grid-cols-1 gap-2 text-white rounded-lg shadow-lg">
+        <div className="grid grid-cols-1 gap-2 text-white rounded-lg shadow-lg flex-col items-center p-4 bg-neutral-900/50 border border-neutral-800">
             <Link
                 className="text-white! !text-sm flex items-center gap-2 hover:underline hover:underline-offset-4"
                 href="https://linkedin.com/in/rishij02"
